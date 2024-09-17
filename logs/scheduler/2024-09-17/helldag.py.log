@@ -1,0 +1,140 @@
+[2024-09-17T22:15:50.918+0000] {processor.py:157} INFO - Started process (PID=31) to work on /opt/airflow/dags/helldag.py
+[2024-09-17T22:15:50.919+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helldag.py for tasks to queue
+[2024-09-17T22:15:50.920+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:15:50.920+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helldag.py
+[2024-09-17T22:15:50.982+0000] {processor.py:836} INFO - DAG(s) dict_keys(['my_first_dag']) retrieved from /opt/airflow/dags/helldag.py
+[2024-09-17T22:15:51.120+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:15:51.120+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-09-17T22:15:51.148+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:15:51.147+0000] {dag.py:3490} INFO - Setting next_dagrun for my_first_dag to 2024-09-18T22:00:00+00:00, run_after=2024-09-19T22:00:00+00:00
+[2024-09-17T22:15:51.206+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helldag.py took 0.291 seconds
+[2024-09-17T22:16:21.425+0000] {processor.py:157} INFO - Started process (PID=33) to work on /opt/airflow/dags/helldag.py
+[2024-09-17T22:16:21.427+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helldag.py for tasks to queue
+[2024-09-17T22:16:21.428+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:16:21.428+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helldag.py
+[2024-09-17T22:16:21.492+0000] {processor.py:836} INFO - DAG(s) dict_keys(['my_first_dag']) retrieved from /opt/airflow/dags/helldag.py
+[2024-09-17T22:16:21.526+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:16:21.526+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-09-17T22:16:21.555+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:16:21.555+0000] {dag.py:3490} INFO - Setting next_dagrun for my_first_dag to 2024-09-18T22:00:00+00:00, run_after=2024-09-19T22:00:00+00:00
+[2024-09-17T22:16:21.581+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helldag.py took 0.159 seconds
+[2024-09-17T22:16:51.839+0000] {processor.py:157} INFO - Started process (PID=35) to work on /opt/airflow/dags/helldag.py
+[2024-09-17T22:16:51.841+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helldag.py for tasks to queue
+[2024-09-17T22:16:51.842+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:16:51.841+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helldag.py
+[2024-09-17T22:16:51.902+0000] {processor.py:836} INFO - DAG(s) dict_keys(['my_first_dag']) retrieved from /opt/airflow/dags/helldag.py
+[2024-09-17T22:16:51.915+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:16:51.914+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-09-17T22:16:51.943+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:16:51.942+0000] {dag.py:3490} INFO - Setting next_dagrun for my_first_dag to 2024-09-18T22:00:00+00:00, run_after=2024-09-19T22:00:00+00:00
+[2024-09-17T22:16:51.967+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helldag.py took 0.130 seconds
+[2024-09-17T22:17:22.109+0000] {processor.py:157} INFO - Started process (PID=36) to work on /opt/airflow/dags/helldag.py
+[2024-09-17T22:17:22.110+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helldag.py for tasks to queue
+[2024-09-17T22:17:22.111+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:17:22.111+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helldag.py
+[2024-09-17T22:17:22.166+0000] {processor.py:836} INFO - DAG(s) dict_keys(['my_first_dag']) retrieved from /opt/airflow/dags/helldag.py
+[2024-09-17T22:17:22.298+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:17:22.298+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-09-17T22:17:22.325+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:17:22.325+0000] {dag.py:3490} INFO - Setting next_dagrun for my_first_dag to 2024-09-18T22:00:00+00:00, run_after=2024-09-19T22:00:00+00:00
+[2024-09-17T22:17:22.353+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helldag.py took 0.247 seconds
+[2024-09-17T22:17:52.405+0000] {processor.py:157} INFO - Started process (PID=37) to work on /opt/airflow/dags/helldag.py
+[2024-09-17T22:17:52.414+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helldag.py for tasks to queue
+[2024-09-17T22:17:52.416+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:17:52.416+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helldag.py
+[2024-09-17T22:17:52.519+0000] {processor.py:836} INFO - DAG(s) dict_keys(['my_first_dag']) retrieved from /opt/airflow/dags/helldag.py
+[2024-09-17T22:17:52.577+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:17:52.576+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-09-17T22:17:52.641+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:17:52.641+0000] {dag.py:3490} INFO - Setting next_dagrun for my_first_dag to 2024-09-18T22:00:00+00:00, run_after=2024-09-19T22:00:00+00:00
+[2024-09-17T22:17:52.695+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helldag.py took 0.295 seconds
+[2024-09-17T22:18:22.887+0000] {processor.py:157} INFO - Started process (PID=38) to work on /opt/airflow/dags/helldag.py
+[2024-09-17T22:18:22.891+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helldag.py for tasks to queue
+[2024-09-17T22:18:22.894+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:18:22.893+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helldag.py
+[2024-09-17T22:18:22.984+0000] {processor.py:836} INFO - DAG(s) dict_keys(['my_first_dag']) retrieved from /opt/airflow/dags/helldag.py
+[2024-09-17T22:18:23.035+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:18:23.034+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-09-17T22:18:23.092+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:18:23.092+0000] {dag.py:3490} INFO - Setting next_dagrun for my_first_dag to 2024-09-18T22:00:00+00:00, run_after=2024-09-19T22:00:00+00:00
+[2024-09-17T22:18:23.158+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helldag.py took 0.278 seconds
+[2024-09-17T22:18:53.551+0000] {processor.py:157} INFO - Started process (PID=39) to work on /opt/airflow/dags/helldag.py
+[2024-09-17T22:18:53.552+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helldag.py for tasks to queue
+[2024-09-17T22:18:53.554+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:18:53.553+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helldag.py
+[2024-09-17T22:18:53.623+0000] {processor.py:836} INFO - DAG(s) dict_keys(['my_first_dag']) retrieved from /opt/airflow/dags/helldag.py
+[2024-09-17T22:18:53.660+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:18:53.659+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-09-17T22:18:53.697+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:18:53.697+0000] {dag.py:3490} INFO - Setting next_dagrun for my_first_dag to 2024-09-18T22:00:00+00:00, run_after=2024-09-19T22:00:00+00:00
+[2024-09-17T22:18:53.755+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helldag.py took 0.213 seconds
+[2024-09-17T22:19:23.941+0000] {processor.py:157} INFO - Started process (PID=40) to work on /opt/airflow/dags/helldag.py
+[2024-09-17T22:19:23.943+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helldag.py for tasks to queue
+[2024-09-17T22:19:23.944+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:19:23.944+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helldag.py
+[2024-09-17T22:19:23.997+0000] {processor.py:836} INFO - DAG(s) dict_keys(['my_first_dag']) retrieved from /opt/airflow/dags/helldag.py
+[2024-09-17T22:19:24.033+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:19:24.032+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-09-17T22:19:24.073+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:19:24.073+0000] {dag.py:3490} INFO - Setting next_dagrun for my_first_dag to 2024-09-18T22:00:00+00:00, run_after=2024-09-19T22:00:00+00:00
+[2024-09-17T22:19:24.122+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helldag.py took 0.184 seconds
+[2024-09-17T22:19:48.033+0000] {processor.py:157} INFO - Started process (PID=41) to work on /opt/airflow/dags/helldag.py
+[2024-09-17T22:19:48.047+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helldag.py for tasks to queue
+[2024-09-17T22:19:48.050+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:19:48.049+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helldag.py
+[2024-09-17T22:19:48.280+0000] {processor.py:836} INFO - DAG(s) dict_keys(['my_first_dag']) retrieved from /opt/airflow/dags/helldag.py
+[2024-09-17T22:19:48.369+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:19:48.369+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-09-17T22:19:48.432+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:19:48.431+0000] {dag.py:3490} INFO - Setting next_dagrun for my_first_dag to 2024-09-18T22:00:00+00:00, run_after=2024-09-19T22:00:00+00:00
+[2024-09-17T22:19:48.497+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helldag.py took 0.468 seconds
+[2024-09-17T22:20:18.695+0000] {processor.py:157} INFO - Started process (PID=42) to work on /opt/airflow/dags/helldag.py
+[2024-09-17T22:20:18.715+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helldag.py for tasks to queue
+[2024-09-17T22:20:18.717+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:20:18.716+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helldag.py
+[2024-09-17T22:20:18.832+0000] {processor.py:836} INFO - DAG(s) dict_keys(['my_first_dag']) retrieved from /opt/airflow/dags/helldag.py
+[2024-09-17T22:20:18.887+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:20:18.887+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-09-17T22:20:18.953+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:20:18.952+0000] {dag.py:3490} INFO - Setting next_dagrun for my_first_dag to 2024-09-18T22:00:00+00:00, run_after=2024-09-19T22:00:00+00:00
+[2024-09-17T22:20:19.039+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helldag.py took 0.346 seconds
+[2024-09-17T22:20:37.179+0000] {processor.py:157} INFO - Started process (PID=43) to work on /opt/airflow/dags/helldag.py
+[2024-09-17T22:20:37.181+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helldag.py for tasks to queue
+[2024-09-17T22:20:37.183+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:20:37.183+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helldag.py
+[2024-09-17T22:20:37.256+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:20:37.247+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/helldag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/helldag.py", line 26, in <module>
+    task1 = PythonOperator(
+NameError: name 'PythonOperator' is not defined
+[2024-09-17T22:20:37.258+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helldag.py
+[2024-09-17T22:20:37.319+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helldag.py took 0.150 seconds
+[2024-09-17T22:21:07.463+0000] {processor.py:157} INFO - Started process (PID=44) to work on /opt/airflow/dags/helldag.py
+[2024-09-17T22:21:07.465+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helldag.py for tasks to queue
+[2024-09-17T22:21:07.466+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:21:07.466+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helldag.py
+[2024-09-17T22:21:07.515+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:21:07.510+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/helldag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/helldag.py", line 26, in <module>
+    task1 = PythonOperator(
+NameError: name 'PythonOperator' is not defined
+[2024-09-17T22:21:07.517+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helldag.py
+[2024-09-17T22:21:07.537+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helldag.py took 0.077 seconds
+[2024-09-17T22:21:16.611+0000] {processor.py:157} INFO - Started process (PID=45) to work on /opt/airflow/dags/helldag.py
+[2024-09-17T22:21:16.613+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helldag.py for tasks to queue
+[2024-09-17T22:21:16.614+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:21:16.614+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helldag.py
+[2024-09-17T22:21:16.688+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:21:16.683+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/helldag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/helldag.py", line 26, in <module>
+    task1 = PythonOperator(
+NameError: name 'PythonOperator' is not defined
+[2024-09-17T22:21:16.690+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helldag.py
+[2024-09-17T22:21:16.710+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helldag.py took 0.102 seconds
+[2024-09-17T22:21:46.813+0000] {processor.py:157} INFO - Started process (PID=46) to work on /opt/airflow/dags/helldag.py
+[2024-09-17T22:21:46.814+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helldag.py for tasks to queue
+[2024-09-17T22:21:46.815+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:21:46.815+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helldag.py
+[2024-09-17T22:21:46.863+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:21:46.858+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/helldag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/helldag.py", line 26, in <module>
+    task1 = PythonOperator(
+NameError: name 'PythonOperator' is not defined
+[2024-09-17T22:21:46.865+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helldag.py
+[2024-09-17T22:21:46.890+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helldag.py took 0.080 seconds
+[2024-09-17T22:22:13.077+0000] {processor.py:157} INFO - Started process (PID=47) to work on /opt/airflow/dags/helldag.py
+[2024-09-17T22:22:13.079+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/helldag.py for tasks to queue
+[2024-09-17T22:22:13.080+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:22:13.080+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/helldag.py
+[2024-09-17T22:22:13.159+0000] {logging_mixin.py:149} INFO - [2024-09-17T22:22:13.154+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/helldag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/helldag.py", line 26, in <module>
+    task1 = PythonOperator(
+NameError: name 'PythonOperator' is not defined
+[2024-09-17T22:22:13.161+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/helldag.py
+[2024-09-17T22:22:13.188+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/helldag.py took 0.114 seconds
