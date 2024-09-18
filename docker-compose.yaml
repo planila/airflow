@@ -1,0 +1,106 @@
+
+services:
+  # PostgreSQL for Airflow Metadata DB
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  # Airflow Scheduler
+  scheduler:
+    image: apache/airflow:2.6.2
+    environment:
+      AIRFLOW__CORE__EXECUTOR: "CeleryExecutor"
+      AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+      AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres:5432/airflow
+      AIRFLOW__CELERY__BROKER_URL: redis://redis:6379/0
+      AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+    depends_on:
+      - postgres
+      - redis
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+    command: >
+      bash -c "
+      airflow db upgrade &&
+      airflow scheduler"
+    restart: always
+
+  # Airflow Webserver
+  webserver:
+    image: apache/airflow:2.6.2
+    environment:
+      AIRFLOW__CORE__EXECUTOR: "CeleryExecutor"
+      AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+      AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres:5432/airflow
+      AIRFLOW__CELERY__BROKER_URL: redis://redis:6379/0
+      AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+    depends_on:
+      - postgres
+      - redis
+      - scheduler
+    ports:
+      - "8181:8080"
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+    command: "airflow webserver"
+    restart: always
+
+  # Airflow Worker
+  worker:
+    image: apache/airflow:2.6.2
+    environment:
+      AIRFLOW__CORE__EXECUTOR: "CeleryExecutor"
+      AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+      AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres:5432/airflow
+      AIRFLOW__CELERY__BROKER_URL: redis://redis:6379/0
+      AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+    depends_on:
+      - postgres
+      - redis
+      - scheduler
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+    command: "airflow celery worker"
+    restart: always
+
+  # Airflow Init Service (To initialize Airflow DB and create the user)
+  init:
+    image: apache/airflow:2.6.2
+    environment:
+      AIRFLOW__CORE__EXECUTOR: "CeleryExecutor"
+      AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+    depends_on:
+      - postgres
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+    command: >
+      bash -c "
+      airflow db init &&
+      airflow users create --username admin --password admin --firstname Admin --lastname Admin --role Admin --email admin@example.com"
+    restart: "on-failure"
+
+  # Redis for Airflow Celery Backend
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+    restart: always
+
+volumes:
+  postgres_data:
+    driver: local
+  airflow_logs:
+    driver: local
+  airflow_dags:
+    driver: local
