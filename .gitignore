@@ -1,1 +1,4 @@
 C:\Users\artur\Desktop\Airflow\logs\scheduler\latest
+C:\Users\artur\Desktop\Airflow\dags\pycache
+*.pyc
+     
