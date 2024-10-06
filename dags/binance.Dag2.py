@@ -11,10 +11,16 @@ from  airflow.operators.bash import BashOperator
 from airflow.operators.python import PythonOperator
 import pendulum
 
+from airflow.operators.dagrun_operator import TriggerDagRunOperator
+from airflow.sensors.external_task import ExternalTaskSensor
+
 
 local_time = pendulum.timezone("Europe/Moscow")
 
 def processing_data(list_from_previous_task: list[list[str]]):
+    #data = ti.xcom_pull(task_ids= f'process_{value}', dag_id='api_binance_dag1') # вот здесь непонятно. Т.е. мы сюда будем передавать из предыдущего дага каждую итерацию цикла? И её обрабатывать или же весь первый даг отработает и результат уйдеь сюда?
+
+
     for key, value_list in list_from_previous_task.items():  # проходимся по ключу-значению словаря
 
         dict_puller = []
@@ -56,7 +62,15 @@ with DAG(
     default_args = default_args,
     description = 'This dag processes values from the first dag',
     schedule_interval = '0 12 * * *' # минуты, часы, день месяца, месяц, день недели
-) as dag:
+) as dag2:
+    wait_for_dag1 = ExternalTaskSensor(
+        task_id='wait_for_dag1',
+        external_dag_id='api_binance_dag1',
+        external_task_id= f'process_{value}',   # если в таскайди первого дага - фстрока. Отработает ли она здесь?
+        mode='reschedule',
+        timeout=600,
+    )
+
     task2 = PythonOperator(
         task_id ='data_prepare',
         python_callable= processing_data,
