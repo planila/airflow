@@ -1,0 +1,17 @@
+# Используем официальный образ Apache Airflow
+FROM apache/airflow:2.5.0
+
+# Устанавливаем рабочую директорию
+WORKDIR \Users\artur\Desktop\Airflow
+
+# Копируем файл зависимостей в контейнер
+COPY requirements.txt .
+
+# Устанавливаем зависимости из requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Копируем ваши DAGs и другие файлы в контейнер (если необходимо)
+COPY dags/ ./dags/
+
+# Указываем команду для запуска Airflow (например, webserver)
+CMD ["airflow", "webserver"]

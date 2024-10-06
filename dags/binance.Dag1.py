@@ -13,42 +13,42 @@ import pendulum
 
 local_time = pendulum.timezone("Europe/Moscow")
 
-name = ['SOLUSDT', '1INCHUSDT', 'SUIUSDT', 'TONUSDT', 'STRKUSDT']
-days = 10
-d1 = dict()
-
-def do_task1():
-    for i in name:
-        def pull_tokens_csv(i, days):
-            end = int(datetime.now().timestamp() * 1000)
-            start = int((datetime.now() - timedelta(days=days)).timestamp() * 1000)
-
-            url = f'https://api.binance.com/api/v3/klines'
-
-            params = {
-                'symbol': i,
-                'interval': '1d',
-                'startTime': start,
-                'endTime': end,
-                'limit': 7
-            }
-
-            response = requests.get(url, params=params)
-
-            if response.status_code == 200:
-                data = response.json()
-                d1[i] = data
+token_names: list[str] = ['SOLUSDT', '1INCHUSDT', 'SUIUSDT', 'TONUSDT', 'STRKUSDT']
+days: int = 10
+crypto_data = dict()
 
 
-            else:
-                print(f"Ошибка: {response.status_code}")
+def pull_tokens_csv(days: int):  #она ничего не возвращает, соответственно, тип возврата незачем указывать?
+
+    end: int = int(datetime.now().timestamp() * 1000)
+    start: int = int((datetime.now() - timedelta(days=days)).timestamp() * 1000)
+
+    url: str = f'https://api.binance.com/api/v3/klines'
+
+    params = {
+        'interval': '1d',
+        'startTime': start,
+        'endTime': end,
+        'limit': 7
+    }
+
+    response: str = requests.get(url, params=params)
+
+    if response.status_code == 200:
+        data = response.json()
+        crypto_data[value] = data
 
 
-        pull_tokens_csv(i, days)
+    else:
+        print(f"Ошибка: {response.status_code}")
+
+
+    #ti.xcom_push(key='my_data', value=data)
+
 
 default_args = {
     'owner': 'Danil',
-    'start_date':local_time.convert(datetime(2024, 9, 28, 0, 0)),
+    'start_date':local_time.convert(datetime(2024, 9, 29, 0, 55)),
     'retries':5
 }
 
@@ -58,12 +58,16 @@ with DAG(
     description = 'This dag take data from api and push it in dict',
     schedule_interval = '0 12 * * *' # минуты, часы, день месяца, месяц, день недели
 ) as dag:
-    task1 = PythonOperator(
-        task_id='api_dag1',
-        python_callable= do_task1,
-    )
-
-
+    for value in token_names:
+        task1 = PythonOperator(
+            task_id = f'process_{value}',
+            python_callable= pull_tokens_csv,
+            # op_kwargs={'value': value} не понял для чего и как нужна эта штука
+        )
 
 
 task1
+
+
+
+
