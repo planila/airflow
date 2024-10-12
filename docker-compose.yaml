@@ -12,8 +12,11 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
+
+
   # Airflow Scheduler
   scheduler:
+
     image: apache/airflow:2.6.2
     environment:
       AIRFLOW__CORE__EXECUTOR: "CeleryExecutor"
@@ -27,14 +30,20 @@ services:
     volumes:
       - ./dags:/opt/airflow/dags
       - ./logs:/opt/airflow/logs
+      - /artur/Desktop/Airflow/requirements.txt:/app/requirements.txt
+
+    working_dir: /Airflow
     command: >
       bash -c "
       airflow db upgrade &&
-      airflow scheduler"
+      airflow scheduler" && 
+      pip install -r requirements.txt"
     restart: always
+
 
   # Airflow Webserver
   webserver:
+
     image: apache/airflow:2.6.2
     environment:
       AIRFLOW__CORE__EXECUTOR: "CeleryExecutor"
@@ -45,17 +54,22 @@ services:
     depends_on:
       - postgres
       - redis
-      - scheduler
     ports:
       - "8181:8080"
     volumes:
       - ./dags:/opt/airflow/dags
       - ./logs:/opt/airflow/logs
-    command: "airflow webserver"
+      - /artur/Desktop/Airflow/requirements.txt:/app/requirements.txt
+
+    command: >
+      bash -c "
+      airflow webserver  && pip install -r requirements.txt"
+
     restart: always
 
   # Airflow Worker
   worker:
+
     image: apache/airflow:2.6.2
     environment:
       AIRFLOW__CORE__EXECUTOR: "CeleryExecutor"
@@ -70,7 +84,12 @@ services:
     volumes:
       - ./dags:/opt/airflow/dags
       - ./logs:/opt/airflow/logs
-    command: "airflow celery worker"
+      - /artur/Desktop/Airflow/requirements.txt:/app/requirements.txt
+
+    command: >
+        bash -c "
+        airflow celery worker  &&
+        pip install -r requirements.txt"
     restart: always
 
   # Airflow Init Service (To initialize Airflow DB and create the user)
@@ -84,10 +103,14 @@ services:
     volumes:
       - ./dags:/opt/airflow/dags
       - ./logs:/opt/airflow/logs
+      - /artur/Desktop/Airflow/requirements.txt:/app/requirements.txt
+#      - .:/app
+#      - ./requirements.txt:/app/requirements.txt
     command: >
       bash -c "
       airflow db init &&
-      airflow users create --username admin --password admin --firstname Admin --lastname Admin --role Admin --email admin@example.com"
+      airflow users create --username admin --password admin --firstname Admin --lastname Admin --role Admin --email admin@example.com" &&
+      pip install -r requirements.txt"
     restart: "on-failure"
 
   # Redis for Airflow Celery Backend
