@@ -1,4 +1,4 @@
-import pandas as pd
+# import pandas as pd
 import requests
 from datetime import datetime, timedelta
 import matplotlib.pyplot as plt
@@ -10,15 +10,17 @@ from airflow import DAG
 from  airflow.operators.bash import BashOperator
 from airflow.operators.python import PythonOperator
 import pendulum
+from airflow.operators.dummy import DummyOperator
+
 
 local_time = pendulum.timezone("Europe/Moscow")
 
-token_names: list[str] = ['SOLUSDT', '1INCHUSDT', 'SUIUSDT', 'TONUSDT', 'STRKUSDT']
+token_names = ['SOLUSDT', '1INCHUSDT', 'SUIUSDT', 'TONUSDT', 'STRKUSDT']
 days: int = 10
-crypto_data = dict()
+# crypto_data = dict()
 
 
-def pull_tokens_csv(days: int):  #она ничего не возвращает, соответственно, тип возврата незачем указывать?
+def pull_tokens_csv(days, value, **context):  #она ничего не возвращает, соответственно, тип возврата незачем указывать?
 
     end: int = int(datetime.now().timestamp() * 1000)
     start: int = int((datetime.now() - timedelta(days=days)).timestamp() * 1000)
@@ -26,6 +28,7 @@ def pull_tokens_csv(days: int):  #она ничего не возвращает,
     url: str = f'https://api.binance.com/api/v3/klines'
 
     params = {
+        'symbol': value,
         'interval': '1d',
         'startTime': start,
         'endTime': end,
@@ -36,14 +39,16 @@ def pull_tokens_csv(days: int):  #она ничего не возвращает,
 
     if response.status_code == 200:
         data = response.json()
-        crypto_data[value] = data
+        symbol = value[0:-3]
+        context['ti'].xcom_push(key=symbol, value=data)
+        print(f"Pushed to XCom: Key: {symbol}, Value: {data}")
 
 
     else:
         print(f"Ошибка: {response.status_code}")
 
 
-    #ti.xcom_push(key='my_data', value=data)
+
 
 
 default_args = {
@@ -58,15 +63,26 @@ with DAG(
     description = 'This dag take data from api and push it in dict',
     schedule_interval = '0 12 * * *' # минуты, часы, день месяца, месяц, день недели
 ) as dag:
+    end_task = DummyOperator(task_id='Dummy')  # Конечная задача
+
+    # Список для хранения задач
+    tasks = []
+
     for value in token_names:
-        task1 = PythonOperator(
-            task_id = f'process_{value}',
-            python_callable= pull_tokens_csv,
-            # op_kwargs={'value': value} не понял для чего и как нужна эта штука
+        task = PythonOperator(
+            task_id=f'{value[0:-4]}',
+            python_callable=pull_tokens_csv,
+            op_kwargs={'days': days, 'value': value},
+            provide_context=True
         )
 
+        # Добавляем задачу в список
+        tasks.append(task)
 
-task1
+        # Связываем каждую задачу с конечной задачей
+        task >> end_task
+
+
 
 
 

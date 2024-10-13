@@ -1,0 +1,28 @@
+[2024-10-13T20:12:46.197+0000] {processor.py:157} INFO - Started process (PID=49) to work on /opt/airflow/dags/binance.Dag2.py
+[2024-10-13T20:12:46.212+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag2.py for tasks to queue
+[2024-10-13T20:12:46.516+0000] {logging_mixin.py:149} INFO - [2024-10-13T20:12:46.516+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag2.py
+[2024-10-13T20:13:02.750+0000] {logging_mixin.py:149} INFO - [2024-10-13T20:13:02.724+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/binance.Dag2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/binance.Dag2.py", line 20, in <module>
+    def processing_data(list_from_previous_task: list[list[str]]):
+TypeError: 'type' object is not subscriptable
+[2024-10-13T20:13:02.756+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/binance.Dag2.py
+[2024-10-13T20:13:02.847+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag2.py took 16.698 seconds
+[2024-10-13T20:13:33.420+0000] {processor.py:157} INFO - Started process (PID=75) to work on /opt/airflow/dags/binance.Dag2.py
+[2024-10-13T20:13:33.423+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag2.py for tasks to queue
+[2024-10-13T20:13:33.426+0000] {logging_mixin.py:149} INFO - [2024-10-13T20:13:33.425+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag2.py
+[2024-10-13T20:13:36.356+0000] {logging_mixin.py:149} INFO - [2024-10-13T20:13:36.351+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/binance.Dag2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/binance.Dag2.py", line 20, in <module>
+    def processing_data(list_from_previous_task: list[list[str]]):
+TypeError: 'type' object is not subscriptable
+[2024-10-13T20:13:36.357+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/binance.Dag2.py
+[2024-10-13T20:13:36.406+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag2.py took 2.998 seconds
