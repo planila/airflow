@@ -1,0 +1,23 @@
+[2024-10-16T17:46:14.575+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/sqlalchemy.py:124: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  return not conf.get("database", "sql_alchemy_conn").startswith("mssql")
+
+[2024-10-16T17:46:15.667+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: my_first_dag.first_task scheduled__2024-10-14T11:15:00+00:00 [queued]>
+[2024-10-16T17:46:15.745+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: my_first_dag.first_task scheduled__2024-10-14T11:15:00+00:00 [queued]>
+[2024-10-16T17:46:15.746+0000] {taskinstance.py:1308} INFO - Starting attempt 3 of 6
+[2024-10-16T17:46:15.792+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): first_task> on 2024-10-14 11:15:00+00:00
+[2024-10-16T17:46:15.812+0000] {standard_task_runner.py:57} INFO - Started process 74 to run task
+[2024-10-16T17:46:15.827+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'my_first_dag', 'first_task', 'scheduled__2024-10-14T11:15:00+00:00', '--job-id', '134', '--raw', '--subdir', 'DAGS_FOLDER/qwe.py', '--cfg-path', '/tmp/tmpfef70ijz']
+[2024-10-16T17:46:15.830+0000] {standard_task_runner.py:85} INFO - Job 134: Subtask first_task
+[2024-10-16T17:46:16.257+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2024-10-16T17:46:16.562+0000] {task_command.py:410} INFO - Running <TaskInstance: my_first_dag.first_task scheduled__2024-10-14T11:15:00+00:00 [running]> on host 3e776c2a96a1
+[2024-10-16T17:46:16.601+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/sqlalchemy.py:124: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  return not conf.get("database", "sql_alchemy_conn").startswith("mssql")
+
+[2024-10-16T17:46:17.177+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='dan' AIRFLOW_CTX_DAG_ID='my_first_dag' AIRFLOW_CTX_TASK_ID='first_task' AIRFLOW_CTX_EXECUTION_DATE='2024-10-14T11:15:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-14T11:15:00+00:00'
+[2024-10-16T17:46:17.182+0000] {logging_mixin.py:149} INFO - Hello world
+[2024-10-16T17:46:17.183+0000] {python.py:183} INFO - Done. Returned value was: None
+[2024-10-16T17:46:17.228+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=my_first_dag, task_id=first_task, execution_date=20241014T111500, start_date=20241016T174615, end_date=20241016T174617
+[2024-10-16T17:46:17.369+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-10-16T17:46:20.094+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check
