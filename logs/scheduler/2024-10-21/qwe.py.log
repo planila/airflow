@@ -2049,3 +2049,59 @@ sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate
 [2024-10-21T17:57:34.590+0000] {logging_mixin.py:149} INFO - [2024-10-21T17:57:34.590+0000] {dag.py:2726} INFO - Sync 1 DAGs
 [2024-10-21T17:57:34.621+0000] {logging_mixin.py:149} INFO - [2024-10-21T17:57:34.621+0000] {dag.py:3490} INFO - Setting next_dagrun for my_first_dag to 2024-10-16T11:15:00+00:00, run_after=2024-10-17T11:15:00+00:00
 [2024-10-21T17:57:34.643+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/qwe.py took 0.234 seconds
+[2024-10-21T17:58:04.870+0000] {processor.py:157} INFO - Started process (PID=189) to work on /opt/airflow/dags/qwe.py
+[2024-10-21T17:58:04.872+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/qwe.py for tasks to queue
+[2024-10-21T17:58:04.874+0000] {logging_mixin.py:149} INFO - [2024-10-21T17:58:04.874+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/qwe.py
+[2024-10-21T17:58:04.978+0000] {processor.py:836} INFO - DAG(s) dict_keys(['my_first_dag']) retrieved from /opt/airflow/dags/qwe.py
+[2024-10-21T17:58:05.043+0000] {logging_mixin.py:149} INFO - [2024-10-21T17:58:05.043+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-21T17:58:05.119+0000] {logging_mixin.py:149} INFO - [2024-10-21T17:58:05.119+0000] {dag.py:3490} INFO - Setting next_dagrun for my_first_dag to 2024-10-16T11:15:00+00:00, run_after=2024-10-17T11:15:00+00:00
+[2024-10-21T17:58:05.169+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/qwe.py took 0.305 seconds
+[2024-10-21T17:58:35.385+0000] {processor.py:157} INFO - Started process (PID=203) to work on /opt/airflow/dags/qwe.py
+[2024-10-21T17:58:35.387+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/qwe.py for tasks to queue
+[2024-10-21T17:58:35.389+0000] {logging_mixin.py:149} INFO - [2024-10-21T17:58:35.389+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/qwe.py
+[2024-10-21T17:58:35.499+0000] {processor.py:836} INFO - DAG(s) dict_keys(['my_first_dag']) retrieved from /opt/airflow/dags/qwe.py
+[2024-10-21T17:58:35.751+0000] {logging_mixin.py:149} INFO - [2024-10-21T17:58:35.750+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-21T17:58:35.816+0000] {logging_mixin.py:149} INFO - [2024-10-21T17:58:35.815+0000] {dag.py:3490} INFO - Setting next_dagrun for my_first_dag to 2024-10-16T11:15:00+00:00, run_after=2024-10-17T11:15:00+00:00
+[2024-10-21T17:58:35.856+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/qwe.py took 0.475 seconds
+[2024-10-21T17:59:06.129+0000] {processor.py:157} INFO - Started process (PID=217) to work on /opt/airflow/dags/qwe.py
+[2024-10-21T17:59:06.131+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/qwe.py for tasks to queue
+[2024-10-21T17:59:06.132+0000] {logging_mixin.py:149} INFO - [2024-10-21T17:59:06.132+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/qwe.py
+[2024-10-21T17:59:06.193+0000] {processor.py:836} INFO - DAG(s) dict_keys(['my_first_dag']) retrieved from /opt/airflow/dags/qwe.py
+[2024-10-21T17:59:06.230+0000] {logging_mixin.py:149} INFO - [2024-10-21T17:59:06.229+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-21T17:59:06.260+0000] {logging_mixin.py:149} INFO - [2024-10-21T17:59:06.260+0000] {dag.py:3490} INFO - Setting next_dagrun for my_first_dag to 2024-10-16T11:15:00+00:00, run_after=2024-10-17T11:15:00+00:00
+[2024-10-21T17:59:06.285+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/qwe.py took 0.160 seconds
+[2024-10-21T17:59:36.566+0000] {processor.py:157} INFO - Started process (PID=231) to work on /opt/airflow/dags/qwe.py
+[2024-10-21T17:59:36.568+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/qwe.py for tasks to queue
+[2024-10-21T17:59:36.569+0000] {logging_mixin.py:149} INFO - [2024-10-21T17:59:36.569+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/qwe.py
+[2024-10-21T17:59:36.618+0000] {processor.py:836} INFO - DAG(s) dict_keys(['my_first_dag']) retrieved from /opt/airflow/dags/qwe.py
+[2024-10-21T17:59:36.648+0000] {logging_mixin.py:149} INFO - [2024-10-21T17:59:36.648+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-21T17:59:36.677+0000] {logging_mixin.py:149} INFO - [2024-10-21T17:59:36.677+0000] {dag.py:3490} INFO - Setting next_dagrun for my_first_dag to 2024-10-16T11:15:00+00:00, run_after=2024-10-17T11:15:00+00:00
+[2024-10-21T17:59:36.701+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/qwe.py took 0.137 seconds
+[2024-10-21T18:00:06.967+0000] {processor.py:157} INFO - Started process (PID=245) to work on /opt/airflow/dags/qwe.py
+[2024-10-21T18:00:06.969+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/qwe.py for tasks to queue
+[2024-10-21T18:00:06.971+0000] {logging_mixin.py:149} INFO - [2024-10-21T18:00:06.970+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/qwe.py
+[2024-10-21T18:00:07.041+0000] {processor.py:836} INFO - DAG(s) dict_keys(['my_first_dag']) retrieved from /opt/airflow/dags/qwe.py
+[2024-10-21T18:00:07.077+0000] {logging_mixin.py:149} INFO - [2024-10-21T18:00:07.077+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-21T18:00:07.107+0000] {logging_mixin.py:149} INFO - [2024-10-21T18:00:07.107+0000] {dag.py:3490} INFO - Setting next_dagrun for my_first_dag to 2024-10-16T11:15:00+00:00, run_after=2024-10-17T11:15:00+00:00
+[2024-10-21T18:00:07.134+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/qwe.py took 0.171 seconds
+[2024-10-21T18:00:37.394+0000] {processor.py:157} INFO - Started process (PID=259) to work on /opt/airflow/dags/qwe.py
+[2024-10-21T18:00:37.396+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/qwe.py for tasks to queue
+[2024-10-21T18:00:37.397+0000] {logging_mixin.py:149} INFO - [2024-10-21T18:00:37.397+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/qwe.py
+[2024-10-21T18:00:37.461+0000] {processor.py:836} INFO - DAG(s) dict_keys(['my_first_dag']) retrieved from /opt/airflow/dags/qwe.py
+[2024-10-21T18:00:37.508+0000] {logging_mixin.py:149} INFO - [2024-10-21T18:00:37.508+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-21T18:00:37.540+0000] {logging_mixin.py:149} INFO - [2024-10-21T18:00:37.540+0000] {dag.py:3490} INFO - Setting next_dagrun for my_first_dag to 2024-10-16T11:15:00+00:00, run_after=2024-10-17T11:15:00+00:00
+[2024-10-21T18:00:37.564+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/qwe.py took 0.178 seconds
+[2024-10-21T18:01:07.815+0000] {processor.py:157} INFO - Started process (PID=273) to work on /opt/airflow/dags/qwe.py
+[2024-10-21T18:01:07.817+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/qwe.py for tasks to queue
+[2024-10-21T18:01:07.818+0000] {logging_mixin.py:149} INFO - [2024-10-21T18:01:07.818+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/qwe.py
+[2024-10-21T18:01:07.867+0000] {processor.py:836} INFO - DAG(s) dict_keys(['my_first_dag']) retrieved from /opt/airflow/dags/qwe.py
+[2024-10-21T18:01:07.900+0000] {logging_mixin.py:149} INFO - [2024-10-21T18:01:07.899+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-21T18:01:07.929+0000] {logging_mixin.py:149} INFO - [2024-10-21T18:01:07.929+0000] {dag.py:3490} INFO - Setting next_dagrun for my_first_dag to 2024-10-16T11:15:00+00:00, run_after=2024-10-17T11:15:00+00:00
+[2024-10-21T18:01:07.965+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/qwe.py took 0.153 seconds
+[2024-10-21T18:01:38.248+0000] {processor.py:157} INFO - Started process (PID=287) to work on /opt/airflow/dags/qwe.py
+[2024-10-21T18:01:38.249+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/qwe.py for tasks to queue
+[2024-10-21T18:01:38.250+0000] {logging_mixin.py:149} INFO - [2024-10-21T18:01:38.250+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/qwe.py
+[2024-10-21T18:01:38.304+0000] {processor.py:836} INFO - DAG(s) dict_keys(['my_first_dag']) retrieved from /opt/airflow/dags/qwe.py
+[2024-10-21T18:01:38.356+0000] {logging_mixin.py:149} INFO - [2024-10-21T18:01:38.356+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-21T18:01:38.400+0000] {logging_mixin.py:149} INFO - [2024-10-21T18:01:38.399+0000] {dag.py:3490} INFO - Setting next_dagrun for my_first_dag to 2024-10-16T11:15:00+00:00, run_after=2024-10-17T11:15:00+00:00
+[2024-10-21T18:01:38.522+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/qwe.py took 0.279 seconds
