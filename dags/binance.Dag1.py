@@ -47,11 +47,13 @@ def push_from_xcom_to_df(ti):
         all_data = []
         for symbol, data in df_token.items():
             df = pd.DataFrame(data, columns=['Open Time', 'Open', 'High', 'Low', 'Close', 'Volume', 'Close Time', 'Quote Asset Volume', 'Number of Trades', 'Taker Buy Base Asset Volume', 'Taker Buy Quote Asset Volume', 'Ignore'])
-            df = df[['Open','High','Low','Close']].rename({'Open':'Цена открытия','High':'Наивысшая цена','Low':'Наименьшая цена','Close':'Цена последней совершенной сделки',})
             df['Имя монеты'] = symbol  # добавляем колонку с символом
+            df['Дата открытия'] = pd.to_datetime(df['Open Time'], unit='ms')
+            df = df[['Имя монеты','Дата открытия','Open','High','Low','Close']].rename({'Open':'Цена открытия','High':'Наивысшая цена','Low':'Наименьшая цена','Close':'Цена последней совершенной сделки',})
+
             #df['Open Time'] = datetime.fromtimestamp(df['Open Time'] / 1000).strftime("%d.%m.%Y, %H:%M:%S")
-            df['Дата открытия'] = pd.to_datetime(df['Open Time'], unit = 'ms')
-            df.drop(columns=['Open'], inplace = True)
+
+            # df.drop(columns=['Open'], inplace = True)
             all_data.append(df)
 
         final_df = pd.concat(all_data, ignore_index=True)
@@ -61,7 +63,7 @@ def push_from_xcom_to_df(ti):
         print("Нет данных для построения DataFrame")
 
 def draw_graphs(ti):
-    json_data = ti.xcom_pull(key='endful_df', task_ids=final_df)
+    json_data = ti.xcom_pull(key='endful_df', task_ids='union_data_to_df')
     if json_data:
         final_df = pd.read_json(json_data)
         print(final_df)
@@ -73,7 +75,7 @@ def draw_graphs(ti):
 default_args = {
     'owner': 'Danil',
     'start_date': local_time.convert(datetime(2024, 9, 29, 0, 55)),
-    'retries': 5
+    'retries': 2
 }
 
 with DAG(
