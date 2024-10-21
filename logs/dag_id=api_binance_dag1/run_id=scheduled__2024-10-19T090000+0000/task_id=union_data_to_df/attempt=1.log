@@ -1,0 +1,60 @@
+[2024-10-21T15:52:46.712+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/sqlalchemy.py:124: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  return not conf.get("database", "sql_alchemy_conn").startswith("mssql")
+
+[2024-10-21T15:52:46.931+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_binance_dag1.union_data_to_df scheduled__2024-10-19T09:00:00+00:00 [queued]>
+[2024-10-21T15:52:46.958+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_binance_dag1.union_data_to_df scheduled__2024-10-19T09:00:00+00:00 [queued]>
+[2024-10-21T15:52:46.959+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 6
+[2024-10-21T15:52:46.990+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): union_data_to_df> on 2024-10-19 09:00:00+00:00
+[2024-10-21T15:52:47.015+0000] {standard_task_runner.py:57} INFO - Started process 386 to run task
+[2024-10-21T15:52:47.023+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'api_binance_dag1', 'union_data_to_df', 'scheduled__2024-10-19T09:00:00+00:00', '--job-id', '369', '--raw', '--subdir', 'DAGS_FOLDER/binance.Dag1.py', '--cfg-path', '/tmp/tmpoj0s1typ']
+[2024-10-21T15:52:47.027+0000] {standard_task_runner.py:85} INFO - Job 369: Subtask union_data_to_df
+[2024-10-21T15:52:47.053+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2024-10-21T15:52:47.141+0000] {task_command.py:410} INFO - Running <TaskInstance: api_binance_dag1.union_data_to_df scheduled__2024-10-19T09:00:00+00:00 [running]> on host 3e776c2a96a1
+[2024-10-21T15:52:47.164+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/sqlalchemy.py:124: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  return not conf.get("database", "sql_alchemy_conn").startswith("mssql")
+
+[2024-10-21T15:52:47.649+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Danil' AIRFLOW_CTX_DAG_ID='api_binance_dag1' AIRFLOW_CTX_TASK_ID='union_data_to_df' AIRFLOW_CTX_EXECUTION_DATE='2024-10-19T09:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-19T09:00:00+00:00'
+[2024-10-21T15:52:47.783+0000] {logging_mixin.py:149} INFO -         Open Time          Open  ... Ignore Symbol
+0   1728691200000  145.52000000  ...      0    SOL
+1   1728777600000  146.39000000  ...      0    SOL
+2   1728864000000  147.74000000  ...      0    SOL
+3   1728950400000  157.59000000  ...      0    SOL
+4   1729036800000  154.76000000  ...      0    SOL
+5   1729123200000  154.28000000  ...      0    SOL
+6   1729209600000  150.50000000  ...      0    SOL
+7   1728691200000    0.25880000  ...      0  1INCH
+8   1728777600000    0.25990000  ...      0  1INCH
+9   1728864000000    0.25700000  ...      0  1INCH
+10  1728950400000    0.27180000  ...      0  1INCH
+11  1729036800000    0.27720000  ...      0  1INCH
+12  1729123200000    0.27030000  ...      0  1INCH
+13  1729209600000    0.26200000  ...      0  1INCH
+14  1728691200000    2.05400000  ...      0    SUI
+15  1728777600000    2.24200000  ...      0    SUI
+16  1728864000000    2.34360000  ...      0    SUI
+17  1728950400000    2.25020000  ...      0    SUI
+18  1729036800000    2.05960000  ...      0    SUI
+19  1729123200000    2.08290000  ...      0    SUI
+20  1729209600000    2.02480000  ...      0    SUI
+21  1728691200000    5.21000000  ...      0    TON
+22  1728777600000    5.24100000  ...      0    TON
+23  1728864000000    5.19300000  ...      0    TON
+24  1728950400000    5.32300000  ...      0    TON
+25  1729036800000    5.22400000  ...      0    TON
+26  1729123200000    5.22600000  ...      0    TON
+27  1729209600000    5.18300000  ...      0    TON
+28  1728691200000    0.40630000  ...      0   STRK
+29  1728777600000    0.42190000  ...      0   STRK
+30  1728864000000    0.42050000  ...      0   STRK
+31  1728950400000    0.44100000  ...      0   STRK
+32  1729036800000    0.42550000  ...      0   STRK
+33  1729123200000    0.41330000  ...      0   STRK
+34  1729209600000    0.39280000  ...      0   STRK
+
+[35 rows x 13 columns]
+[2024-10-21T15:52:47.784+0000] {python.py:183} INFO - Done. Returned value was: None
+[2024-10-21T15:52:47.800+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=api_binance_dag1, task_id=union_data_to_df, execution_date=20241019T090000, start_date=20241021T155246, end_date=20241021T155247
+[2024-10-21T15:52:47.877+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-10-21T15:52:47.902+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

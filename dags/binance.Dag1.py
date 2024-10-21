@@ -47,13 +47,28 @@ def push_from_xcom_to_df(ti):
         all_data = []
         for symbol, data in df_token.items():
             df = pd.DataFrame(data, columns=['Open Time', 'Open', 'High', 'Low', 'Close', 'Volume', 'Close Time', 'Quote Asset Volume', 'Number of Trades', 'Taker Buy Base Asset Volume', 'Taker Buy Quote Asset Volume', 'Ignore'])
-            df['Symbol'] = symbol  # добавляем колонку с символом
+            df = df[['Open','High','Low','Close']].rename({'Open':'Цена открытия','High':'Наивысшая цена','Low':'Наименьшая цена','Close':'Цена последней совершенной сделки',})
+            df['Имя монеты'] = symbol  # добавляем колонку с символом
+            #df['Open Time'] = datetime.fromtimestamp(df['Open Time'] / 1000).strftime("%d.%m.%Y, %H:%M:%S")
+            df['Дата открытия'] = pd.to_datetime(df['Open Time'], unit = 'ms')
+            df.drop(columns=['Open'], inplace = True)
             all_data.append(df)
 
         final_df = pd.concat(all_data, ignore_index=True)
+        ti.xcom_push(key='endful_df', value=final_df.to_json())
         print(final_df)
     else:
         print("Нет данных для построения DataFrame")
+
+def draw_graphs(ti):
+    json_data = ti.xcom_pull(key='endful_df', task_ids=final_df)
+    if json_data:
+        final_df = pd.read_json(json_data)
+        print(final_df)
+    else:
+        print("Нет данных для построения графиков")
+
+
 
 default_args = {
     'owner': 'Danil',
@@ -86,6 +101,14 @@ with DAG(
         provide_context=True
     )
 
+    power_bi = PythonOperator(
+        task_id='draw_smth_graphs',
+        python_callable=draw_graphs,
+        provide_context=True
+    )
+
     # Связываем каждую задачу с union_data
     for task in tasks:
         task >> union_data  # Каждую задачу связываем с union_data
+
+    union_data >> power_bi

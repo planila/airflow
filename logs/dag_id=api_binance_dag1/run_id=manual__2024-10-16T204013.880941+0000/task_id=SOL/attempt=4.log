@@ -1,0 +1,4 @@
+[2024-10-21T15:45:34.400+0000] {taskinstance.py:1097} INFO - Dependencies not met for <TaskInstance: api_binance_dag1.SOL manual__2024-10-16T20:40:13.880941+00:00 [success]>, dependency 'Task Instance State' FAILED: Task is in the 'success' state.
+[2024-10-21T15:45:34.428+0000] {local_task_job_runner.py:154} INFO - Task is not able to be run
+[2024-10-21T15:45:40.422+0000] {taskinstance.py:1097} INFO - Dependencies not met for <TaskInstance: api_binance_dag1.SOL manual__2024-10-16T20:40:13.880941+00:00 [success]>, dependency 'Task Instance State' FAILED: Task is in the 'success' state.
+[2024-10-21T15:45:40.428+0000] {local_task_job_runner.py:154} INFO - Task is not able to be run

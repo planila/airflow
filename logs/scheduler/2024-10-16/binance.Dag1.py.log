@@ -3652,3 +3652,395 @@ SyntaxError: unexpected EOF while parsing
 [2024-10-16T20:42:41.472+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:42:41.471+0000] {dag.py:2726} INFO - Sync 1 DAGs
 [2024-10-16T20:42:41.530+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:42:41.530+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
 [2024-10-16T20:42:41.566+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.834 seconds
+[2024-10-16T20:43:12.256+0000] {processor.py:157} INFO - Started process (PID=3679) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:43:12.258+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T20:43:12.260+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:43:12.259+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:43:13.424+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:43:13.597+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:43:13.596+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T20:43:13.663+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:43:13.662+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T20:43:13.710+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 1.460 seconds
+[2024-10-16T20:43:44.001+0000] {processor.py:157} INFO - Started process (PID=3693) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:43:44.002+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T20:43:44.004+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:43:44.004+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:43:44.492+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:43:44.531+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:43:44.531+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T20:43:44.566+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:43:44.566+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T20:43:44.604+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.608 seconds
+[2024-10-16T20:44:14.705+0000] {processor.py:157} INFO - Started process (PID=3708) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:44:14.707+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T20:44:14.708+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:44:14.707+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:44:15.207+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:44:15.244+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:44:15.243+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T20:44:15.279+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:44:15.279+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T20:44:15.329+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.626 seconds
+[2024-10-16T20:44:45.983+0000] {processor.py:157} INFO - Started process (PID=3722) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:44:45.985+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T20:44:45.988+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:44:45.987+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:44:47.194+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:44:47.248+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:44:47.247+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T20:44:47.297+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:44:47.296+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T20:44:47.330+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 1.355 seconds
+[2024-10-16T20:45:17.640+0000] {processor.py:157} INFO - Started process (PID=3736) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:45:17.641+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T20:45:17.643+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:45:17.642+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:45:18.373+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:45:18.464+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:45:18.461+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T20:45:18.543+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:45:18.542+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T20:45:18.594+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.959 seconds
+[2024-10-16T20:45:49.187+0000] {processor.py:157} INFO - Started process (PID=3750) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:45:49.189+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T20:45:49.190+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:45:49.190+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:45:49.765+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:45:49.821+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:45:49.820+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T20:45:49.866+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:45:49.866+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T20:45:49.902+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.719 seconds
+[2024-10-16T20:46:20.525+0000] {processor.py:157} INFO - Started process (PID=3764) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:46:20.526+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T20:46:20.527+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:46:20.527+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:46:21.212+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:46:21.251+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:46:21.250+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T20:46:21.287+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:46:21.286+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T20:46:21.314+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.793 seconds
+[2024-10-16T20:46:52.034+0000] {processor.py:157} INFO - Started process (PID=3778) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:46:52.043+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T20:46:52.045+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:46:52.044+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:46:52.691+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:46:52.729+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:46:52.729+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T20:46:52.768+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:46:52.768+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T20:46:52.800+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.769 seconds
+[2024-10-16T20:47:23.511+0000] {processor.py:157} INFO - Started process (PID=3792) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:47:23.513+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T20:47:23.515+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:47:23.515+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:47:24.119+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:47:24.168+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:47:24.167+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T20:47:24.208+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:47:24.208+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T20:47:24.239+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.737 seconds
+[2024-10-16T20:47:55.015+0000] {processor.py:157} INFO - Started process (PID=3806) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:47:55.016+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T20:47:55.017+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:47:55.017+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:47:55.533+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:47:55.571+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:47:55.570+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T20:47:55.607+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:47:55.606+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T20:47:55.635+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.623 seconds
+[2024-10-16T20:48:25.840+0000] {processor.py:157} INFO - Started process (PID=3820) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:48:25.841+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T20:48:25.842+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:48:25.842+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:48:26.400+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:48:26.442+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:48:26.441+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T20:48:26.479+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:48:26.479+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T20:48:26.509+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.672 seconds
+[2024-10-16T20:48:56.766+0000] {processor.py:157} INFO - Started process (PID=3834) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:48:56.767+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T20:48:56.769+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:48:56.768+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:48:57.273+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:48:57.310+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:48:57.310+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T20:48:57.345+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:48:57.345+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T20:48:57.377+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.615 seconds
+[2024-10-16T20:49:28.225+0000] {processor.py:157} INFO - Started process (PID=3848) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:49:28.226+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T20:49:28.227+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:49:28.227+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:49:28.800+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:49:28.847+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:49:28.846+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T20:49:28.885+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:49:28.885+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T20:49:28.916+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.696 seconds
+[2024-10-16T20:49:59.691+0000] {processor.py:157} INFO - Started process (PID=3862) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:49:59.693+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T20:49:59.694+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:49:59.694+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:50:00.555+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:50:00.664+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:50:00.663+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T20:50:00.838+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:50:00.837+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T20:50:00.930+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 1.243 seconds
+[2024-10-16T20:50:31.285+0000] {processor.py:157} INFO - Started process (PID=3876) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:50:31.286+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T20:50:31.288+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:50:31.287+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:50:32.107+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:50:32.175+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:50:32.174+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T20:50:32.247+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:50:32.246+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T20:50:32.282+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 1.001 seconds
+[2024-10-16T20:51:02.565+0000] {processor.py:157} INFO - Started process (PID=3890) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:51:02.566+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T20:51:02.567+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:51:02.567+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:51:03.114+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:51:03.157+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:51:03.156+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T20:51:03.202+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:51:03.202+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T20:51:03.234+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.673 seconds
+[2024-10-16T20:51:33.311+0000] {processor.py:157} INFO - Started process (PID=3904) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:51:33.313+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T20:51:33.315+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:51:33.314+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:51:34.411+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:51:34.517+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:51:34.516+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T20:51:34.716+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:51:34.715+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T20:51:34.829+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 1.524 seconds
+[2024-10-16T20:52:05.604+0000] {processor.py:157} INFO - Started process (PID=3918) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:52:05.606+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T20:52:05.608+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:52:05.608+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:52:06.294+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:52:06.333+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:52:06.332+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T20:52:06.373+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:52:06.372+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T20:52:06.403+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.803 seconds
+[2024-10-16T20:52:37.144+0000] {processor.py:157} INFO - Started process (PID=3932) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:52:37.149+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T20:52:37.153+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:52:37.152+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:52:37.968+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:52:38.012+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:52:38.011+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T20:52:38.057+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:52:38.057+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T20:52:38.097+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.963 seconds
+[2024-10-16T20:53:08.684+0000] {processor.py:157} INFO - Started process (PID=3946) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:53:08.685+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T20:53:08.686+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:53:08.686+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:53:09.285+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:53:09.323+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:53:09.323+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T20:53:09.364+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:53:09.364+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T20:53:09.403+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.722 seconds
+[2024-10-16T20:53:39.695+0000] {processor.py:157} INFO - Started process (PID=3960) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:53:39.697+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T20:53:39.699+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:53:39.699+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:53:40.206+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:53:40.243+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:53:40.242+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T20:53:40.280+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:53:40.280+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T20:53:40.310+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.618 seconds
+[2024-10-16T20:54:10.558+0000] {processor.py:157} INFO - Started process (PID=3981) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:54:10.560+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T20:54:10.561+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:54:10.561+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:54:11.075+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:54:11.113+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:54:11.112+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T20:54:11.150+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:54:11.150+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T20:54:11.192+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.637 seconds
+[2024-10-16T20:54:41.505+0000] {processor.py:157} INFO - Started process (PID=3995) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:54:41.506+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T20:54:41.507+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:54:41.507+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:54:42.043+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:54:42.089+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:54:42.088+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T20:54:42.124+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:54:42.124+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T20:54:42.155+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.654 seconds
+[2024-10-16T20:55:12.353+0000] {processor.py:157} INFO - Started process (PID=4009) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:55:12.354+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T20:55:12.356+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:55:12.356+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:55:12.957+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:55:12.998+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:55:12.996+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T20:55:13.043+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:55:13.043+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T20:55:13.079+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.729 seconds
+[2024-10-16T20:55:43.416+0000] {processor.py:157} INFO - Started process (PID=4023) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:55:43.418+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T20:55:43.420+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:55:43.419+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:55:43.978+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:55:44.022+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:55:44.021+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T20:55:44.067+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:55:44.067+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T20:55:44.103+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.691 seconds
+[2024-10-16T20:56:14.900+0000] {processor.py:157} INFO - Started process (PID=4044) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:56:14.902+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T20:56:14.903+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:56:14.903+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:56:15.429+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:56:15.471+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:56:15.470+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T20:56:15.511+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:56:15.511+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T20:56:15.579+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.683 seconds
+[2024-10-16T20:56:45.791+0000] {processor.py:157} INFO - Started process (PID=4058) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:56:45.792+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T20:56:45.794+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:56:45.794+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:56:46.390+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:56:46.439+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:56:46.438+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T20:56:46.485+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:56:46.485+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T20:56:46.518+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.732 seconds
+[2024-10-16T20:57:16.830+0000] {processor.py:157} INFO - Started process (PID=4072) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:57:16.832+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T20:57:16.833+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:57:16.833+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:57:17.398+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:57:17.437+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:57:17.437+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T20:57:17.483+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:57:17.483+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T20:57:17.524+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.699 seconds
+[2024-10-16T20:57:48.287+0000] {processor.py:157} INFO - Started process (PID=4086) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:57:48.290+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T20:57:48.292+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:57:48.292+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:57:49.027+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:57:49.087+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:57:49.085+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T20:57:51.705+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:57:51.704+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T20:57:51.731+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 3.450 seconds
+[2024-10-16T20:58:21.871+0000] {processor.py:157} INFO - Started process (PID=4107) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:58:21.873+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T20:58:21.875+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:58:21.875+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:58:22.544+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:58:22.594+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:58:22.593+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T20:58:22.655+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:58:22.655+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T20:58:22.699+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.834 seconds
+[2024-10-16T20:58:53.347+0000] {processor.py:157} INFO - Started process (PID=4121) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:58:53.349+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T20:58:53.350+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:58:53.350+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:58:53.840+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:58:53.878+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:58:53.878+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T20:58:53.914+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:58:53.914+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T20:58:53.946+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.603 seconds
+[2024-10-16T20:59:24.137+0000] {processor.py:157} INFO - Started process (PID=4135) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:59:24.146+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T20:59:24.152+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:59:24.152+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:59:24.749+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:59:24.785+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:59:24.784+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T20:59:24.821+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:59:24.821+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T20:59:24.851+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.749 seconds
+[2024-10-16T20:59:55.392+0000] {processor.py:157} INFO - Started process (PID=4149) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:59:55.393+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T20:59:55.395+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:59:55.394+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:59:55.930+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T20:59:55.970+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:59:55.969+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T20:59:56.004+0000] {logging_mixin.py:149} INFO - [2024-10-16T20:59:56.004+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T20:59:56.189+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.800 seconds
+[2024-10-16T21:00:26.697+0000] {processor.py:157} INFO - Started process (PID=4163) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:00:26.698+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T21:00:26.699+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:00:26.699+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:00:27.248+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:00:27.285+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:00:27.284+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T21:00:27.477+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:00:27.477+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T21:00:27.516+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.822 seconds
+[2024-10-16T21:00:57.981+0000] {processor.py:157} INFO - Started process (PID=4177) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:00:57.983+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T21:00:57.984+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:00:57.984+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:00:58.511+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:00:58.553+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:00:58.552+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T21:00:58.596+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:00:58.595+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T21:00:58.630+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.652 seconds
+[2024-10-16T21:01:29.321+0000] {processor.py:157} INFO - Started process (PID=4191) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:01:29.323+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T21:01:29.325+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:01:29.324+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:01:30.379+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:01:30.456+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:01:30.455+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T21:01:30.568+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:01:30.567+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T21:01:30.614+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 1.298 seconds
+[2024-10-16T21:02:00.933+0000] {processor.py:157} INFO - Started process (PID=4205) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:02:00.934+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T21:02:00.936+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:02:00.935+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:02:01.436+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:02:01.472+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:02:01.471+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T21:02:01.508+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:02:01.508+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T21:02:01.542+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.614 seconds
+[2024-10-16T21:02:31.684+0000] {processor.py:157} INFO - Started process (PID=4220) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:02:31.685+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T21:02:31.687+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:02:31.686+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:02:32.177+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:02:32.214+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:02:32.213+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T21:02:32.250+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:02:32.250+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T21:02:32.420+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.740 seconds
+[2024-10-16T21:03:02.934+0000] {processor.py:157} INFO - Started process (PID=4234) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:03:02.936+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T21:03:02.937+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:03:02.937+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:03:03.439+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:03:03.486+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:03:03.485+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T21:03:03.717+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:03:03.717+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T21:03:03.746+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.815 seconds
+[2024-10-16T21:03:34.196+0000] {processor.py:157} INFO - Started process (PID=4248) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:03:34.198+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T21:03:34.200+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:03:34.200+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:03:34.720+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:03:34.759+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:03:34.758+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T21:03:34.797+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:03:34.797+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T21:03:34.835+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.642 seconds
+[2024-10-16T21:04:04.912+0000] {processor.py:157} INFO - Started process (PID=4262) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:04:04.913+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T21:04:04.915+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:04:04.914+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:04:05.428+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:04:05.470+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:04:05.469+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T21:04:05.510+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:04:05.510+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T21:04:05.547+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.639 seconds
+[2024-10-16T21:04:36.183+0000] {processor.py:157} INFO - Started process (PID=4276) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:04:36.184+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T21:04:36.186+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:04:36.185+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:04:36.846+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:04:36.885+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:04:36.885+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T21:04:36.920+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:04:36.920+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T21:04:36.959+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.780 seconds
+[2024-10-16T21:05:07.712+0000] {processor.py:157} INFO - Started process (PID=4290) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:05:07.714+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T21:05:07.715+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:05:07.715+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:05:08.251+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:05:08.291+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:05:08.290+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T21:05:08.329+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:05:08.328+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T21:05:08.498+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.789 seconds
+[2024-10-16T21:05:39.221+0000] {processor.py:157} INFO - Started process (PID=4304) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:05:39.222+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T21:05:39.224+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:05:39.224+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:05:39.796+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:05:39.865+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:05:39.863+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T21:05:40.064+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:05:40.064+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T21:05:40.098+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.882 seconds
+[2024-10-16T21:06:10.668+0000] {processor.py:157} INFO - Started process (PID=4318) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:06:10.670+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T21:06:10.671+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:06:10.671+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:06:11.171+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:06:11.215+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:06:11.214+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T21:06:11.256+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:06:11.256+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T21:06:11.293+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.628 seconds
+[2024-10-16T21:06:41.393+0000] {processor.py:157} INFO - Started process (PID=4332) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:06:41.396+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T21:06:41.397+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:06:41.397+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:06:41.919+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:06:41.968+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:06:41.967+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T21:06:42.003+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:06:42.003+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T21:06:42.041+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.651 seconds
+[2024-10-16T21:07:12.644+0000] {processor.py:157} INFO - Started process (PID=4346) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:07:12.646+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T21:07:12.647+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:07:12.647+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:07:13.318+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:07:13.377+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:07:13.376+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T21:07:13.413+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:07:13.412+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T21:07:13.444+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.803 seconds
+[2024-10-16T21:07:44.109+0000] {processor.py:157} INFO - Started process (PID=4360) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:07:44.110+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T21:07:44.112+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:07:44.112+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:07:44.668+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:07:44.710+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:07:44.709+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T21:07:44.748+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:07:44.748+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T21:07:44.941+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.838 seconds
+[2024-10-16T21:08:15.559+0000] {processor.py:157} INFO - Started process (PID=4374) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:08:15.560+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T21:08:15.562+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:08:15.561+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:08:16.099+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:08:16.134+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:08:16.133+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T21:08:16.349+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:08:16.348+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T21:08:16.391+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.836 seconds
+[2024-10-16T21:08:46.900+0000] {processor.py:157} INFO - Started process (PID=4388) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:08:46.901+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T21:08:46.903+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:08:46.903+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:08:47.469+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:08:47.513+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:08:47.513+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T21:08:47.555+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:08:47.555+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T21:08:47.588+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.693 seconds
+[2024-10-16T21:09:18.328+0000] {processor.py:157} INFO - Started process (PID=4402) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:09:18.330+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T21:09:18.331+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:09:18.331+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:09:18.865+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:09:18.902+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:09:18.902+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T21:09:18.938+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:09:18.938+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T21:09:18.973+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.649 seconds
+[2024-10-16T21:09:49.863+0000] {processor.py:157} INFO - Started process (PID=4416) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:09:49.866+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T21:09:49.868+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:09:49.867+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:09:50.359+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:09:50.393+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:09:50.392+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T21:09:50.428+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:09:50.428+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T21:09:50.462+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.602 seconds
+[2024-10-16T21:10:21.259+0000] {processor.py:157} INFO - Started process (PID=4437) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:10:21.261+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T21:10:21.262+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:10:21.262+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:10:21.787+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:10:21.838+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:10:21.838+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T21:10:22.138+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:10:22.138+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T21:10:22.170+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.918 seconds
+[2024-10-16T21:10:52.677+0000] {processor.py:157} INFO - Started process (PID=4451) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:10:52.678+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T21:10:52.679+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:10:52.679+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:10:53.178+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:10:53.212+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:10:53.211+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T21:10:53.396+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:10:53.396+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T21:10:53.424+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.751 seconds
+[2024-10-16T21:11:23.937+0000] {processor.py:157} INFO - Started process (PID=4465) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:11:23.939+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T21:11:23.940+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:11:23.940+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:11:24.430+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:11:24.466+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:11:24.465+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T21:11:24.501+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:11:24.501+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T21:11:24.538+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.605 seconds
+[2024-10-16T21:11:55.245+0000] {processor.py:157} INFO - Started process (PID=4479) to work on /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:11:55.247+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/binance.Dag1.py for tasks to queue
+[2024-10-16T21:11:55.248+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:11:55.248+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:11:55.773+0000] {processor.py:836} INFO - DAG(s) dict_keys(['api_binance_dag1']) retrieved from /opt/airflow/dags/binance.Dag1.py
+[2024-10-16T21:11:55.816+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:11:55.815+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2024-10-16T21:11:55.855+0000] {logging_mixin.py:149} INFO - [2024-10-16T21:11:55.855+0000] {dag.py:3490} INFO - Setting next_dagrun for api_binance_dag1 to 2024-10-16T09:00:00+00:00, run_after=2024-10-17T09:00:00+00:00
+[2024-10-16T21:11:55.887+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/binance.Dag1.py took 0.646 seconds
