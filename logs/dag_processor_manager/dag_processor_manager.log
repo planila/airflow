@@ -30289,3 +30289,89 @@ File Path                            PID  Runtime      # DAGs    # Errors  Last 
 ================================================================================
 [2024-10-28T21:53:53.900+0000] {manager.py:1210} ERROR - Processor for /opt/airflow/dags/binance.Dag1.py with PID 210 started at 2024-10-28T21:52:55.043973+00:00 has timed out, killing it.
 [2024-10-28T21:53:55.408+0000] {manager.py:470} INFO - Exiting gracefully upon receiving signal 15
+[2024-10-28T21:54:27.613+0000] {manager.py:487} INFO - Processing files using up to 2 processes at a time 
+[2024-10-28T21:54:27.624+0000] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2024-10-28T21:54:27.625+0000] {manager.py:490} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2024-10-28T21:54:27.626+0000] {manager.py:758} INFO - Searching for files in /opt/airflow/dags
+[2024-10-28T21:54:27.684+0000] {manager.py:761} INFO - There are 2 files in /opt/airflow/dags
+[2024-10-28T21:54:27.810+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/binance.Dag1.py     38  0.07s             0           0
+/opt/airflow/dags/qwe.py              39  0.05s             0           0
+================================================================================
+[2024-10-28T21:54:58.437+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/binance.Dag1.py                           1           0  1.78s           2024-10-28T21:54:29
+/opt/airflow/dags/qwe.py              52  0.01s             1           0  0.43s           2024-10-28T21:54:28
+================================================================================
+[2024-10-28T21:55:28.670+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/binance.Dag1.py                           1           0  2.83s           2024-10-28T21:55:02
+/opt/airflow/dags/qwe.py                                    1           0  0.27s           2024-10-28T21:54:58
+================================================================================
+[2024-10-28T21:55:59.392+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/binance.Dag1.py                           1           0  1.45s           2024-10-28T21:55:34
+/opt/airflow/dags/qwe.py              80  0.01s             1           0  0.30s           2024-10-28T21:55:29
+================================================================================
+[2024-10-28T21:56:29.834+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/binance.Dag1.py                           1           0  1.58s           2024-10-28T21:56:06
+/opt/airflow/dags/qwe.py              94  0.01s             1           0  0.18s           2024-10-28T21:55:59
+================================================================================
+[2024-10-28T21:57:00.468+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/binance.Dag1.py                           1           0  1.37s           2024-10-28T21:56:37
+/opt/airflow/dags/qwe.py             108  0.00s             1           0  0.38s           2024-10-28T21:56:30
+================================================================================
+[2024-10-28T21:57:31.010+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/binance.Dag1.py                           1           0  1.40s           2024-10-28T21:57:09
+/opt/airflow/dags/qwe.py             122  0.01s             1           0  0.28s           2024-10-28T21:57:00
+================================================================================
+[2024-10-28T21:58:01.445+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/binance.Dag1.py                           1           0  1.41s           2024-10-28T21:57:40
+/opt/airflow/dags/qwe.py             136  0.00s             1           0  0.18s           2024-10-28T21:57:31
+================================================================================
+[2024-10-28T21:58:31.902+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/binance.Dag1.py                           1           0  1.36s           2024-10-28T21:58:12
+/opt/airflow/dags/qwe.py             150  0.01s             1           0  0.19s           2024-10-28T21:58:01
+================================================================================
