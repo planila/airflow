@@ -5,6 +5,7 @@ from datetime import datetime, timedelta
 import pendulum
 from airflow import DAG
 from airflow.operators.python import PythonOperator
+import matplotlib.pyplot as plt
 
 local_time = pendulum.timezone("Europe/Moscow")
 
@@ -22,7 +23,7 @@ def pull_tokens_csv(days, value, ti):
         'interval': '1d',
         'startTime': start,
         'endTime': end,
-        'limit': 7
+        'limit': 10
     }
 
     response = requests.get(url, params=params)
@@ -49,15 +50,15 @@ def push_from_xcom_to_df(ti):
             df = pd.DataFrame(data, columns=['Open Time', 'Open', 'High', 'Low', 'Close', 'Volume', 'Close Time', 'Quote Asset Volume', 'Number of Trades', 'Taker Buy Base Asset Volume', 'Taker Buy Quote Asset Volume', 'Ignore'])
             df['Имя монеты'] = symbol  # добавляем колонку с символом
             df['Дата открытия'] = pd.to_datetime(df['Open Time'], unit='ms')
-            df = df[['Имя монеты','Дата открытия','Open','High','Low','Close']].rename({'Open':'Цена открытия','High':'Наивысшая цена','Low':'Наименьшая цена','Close':'Цена последней совершенной сделки',})
+            df = df[['Имя монеты','Дата открытия','Open','High','Low','Close']].rename(columns = {'Open':'Цена открытия','High':'Наивысшая цена','Low':'Наименьшая цена','Close':'Цена последней совершенной сделки'})
+            df[['Цена открытия','Наивысшая цена','Наименьшая цена','Цена последней совершенной сделки']] = df[['Цена открытия','Наивысшая цена','Наименьшая цена','Цена последней совершенной сделки']].round(2)
 
-            #df['Open Time'] = datetime.fromtimestamp(df['Open Time'] / 1000).strftime("%d.%m.%Y, %H:%M:%S")
 
-            # df.drop(columns=['Open'], inplace = True)
             all_data.append(df)
 
         final_df = pd.concat(all_data, ignore_index=True)
-        ti.xcom_push(key='endful_df', value=final_df.to_json())
+        json_data = final_df.to_json(orient='records')
+        ti.xcom_push(key='endful_df', value=json_data)
         print(final_df)
     else:
         print("Нет данных для построения DataFrame")
@@ -66,7 +67,26 @@ def draw_graphs(ti):
     json_data = ti.xcom_pull(key='endful_df', task_ids='union_data_to_df')
     if json_data:
         final_df = pd.read_json(json_data)
+        #final_df['Дата открытия'] = final_df['Дата открытия'].dt.strftime('%d.%m.%Y') #не понимаю, почему эта колонка не передалась в датаформате из предыдущего таска
+        final_df['Дата открытия'] = pd.to_datetime(final_df['Дата открытия'], unit='ms')
+        final_df = final_df[['Имя монеты','Дата открытия','Цена последней совершенной сделки']]
         print(final_df)
+        # Непосредственно построение графиков
+
+
+        groups = final_df.groupby('Имя монеты')
+
+        for name, group in groups:
+            plt.figure()  # Создаем новую фигуру для каждого графика
+            plt.plot(group['Дата открытия'], group['Цена последней совершенной сделки'], marker='o', label=name)
+            plt.title(f'График для {name}')
+            plt.xlabel('Дата')
+            plt.ylabel('Значение')
+            plt.legend()
+            plt.grid()
+            plt.show()
+
+        # print(final_df[['Имя монеты','Дата открытия','Цена последней совершенной сделки']])
     else:
         print("Нет данных для построения графиков")
 

@@ -1,0 +1,69 @@
+[2024-10-28T21:56:26.622+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_binance_dag1.union_data_to_df manual__2024-10-28T21:50:17.159772+00:00 [queued]>
+[2024-10-28T21:56:26.636+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_binance_dag1.union_data_to_df manual__2024-10-28T21:50:17.159772+00:00 [queued]>
+[2024-10-28T21:56:26.636+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 3
+[2024-10-28T21:56:26.653+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): union_data_to_df> on 2024-10-28 21:50:17.159772+00:00
+[2024-10-28T21:56:26.660+0000] {standard_task_runner.py:57} INFO - Started process 399 to run task
+[2024-10-28T21:56:26.663+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'api_binance_dag1', 'union_data_to_df', 'manual__2024-10-28T21:50:17.159772+00:00', '--job-id', '783', '--raw', '--subdir', 'DAGS_FOLDER/binance.Dag1.py', '--cfg-path', '/tmp/tmpp4oiyc24']
+[2024-10-28T21:56:26.665+0000] {standard_task_runner.py:85} INFO - Job 783: Subtask union_data_to_df
+[2024-10-28T21:56:26.681+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2024-10-28T21:56:26.731+0000] {task_command.py:410} INFO - Running <TaskInstance: api_binance_dag1.union_data_to_df manual__2024-10-28T21:50:17.159772+00:00 [running]> on host 3e776c2a96a1
+[2024-10-28T21:56:26.866+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Danil' AIRFLOW_CTX_DAG_ID='api_binance_dag1' AIRFLOW_CTX_TASK_ID='union_data_to_df' AIRFLOW_CTX_EXECUTION_DATE='2024-10-28T21:50:17.159772+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-28T21:50:17.159772+00:00'
+[2024-10-28T21:56:27.009+0000] {logging_mixin.py:149} INFO -    Имя монеты Дата открытия  ... Наименьшая цена Цена последней совершенной сделки
+0         SOL    2024-10-19  ...    153.45000000                      159.79000000
+1         SOL    2024-10-20  ...    157.58000000                      167.40000000
+2         SOL    2024-10-21  ...    160.99000000                      166.17000000
+3         SOL    2024-10-22  ...    162.99000000                      167.59000000
+4         SOL    2024-10-23  ...    164.13000000                      170.85000000
+5         SOL    2024-10-24  ...    170.50000000                      177.19000000
+6         SOL    2024-10-25  ...    159.12000000                      164.90000000
+7         SOL    2024-10-26  ...    162.43000000                      170.88000000
+8         SOL    2024-10-27  ...    170.26000000                      176.63000000
+9         SOL    2024-10-28  ...    172.45000000                      178.86000000
+10      1INCH    2024-10-19  ...      0.26820000                        0.27240000
+11      1INCH    2024-10-20  ...      0.26850000                        0.29120000
+12      1INCH    2024-10-21  ...      0.27410000                        0.27820000
+13      1INCH    2024-10-22  ...      0.26960000                        0.27530000
+14      1INCH    2024-10-23  ...      0.25570000                        0.26460000
+15      1INCH    2024-10-24  ...      0.26270000                        0.27430000
+16      1INCH    2024-10-25  ...      0.23950000                        0.24790000
+17      1INCH    2024-10-26  ...      0.24230000                        0.25100000
+18      1INCH    2024-10-27  ...      0.24990000                        0.25730000
+19      1INCH    2024-10-28  ...      0.24660000                        0.25800000
+20        SUI    2024-10-19  ...      2.04010000                        2.06280000
+21        SUI    2024-10-20  ...      2.04330000                        2.12820000
+22        SUI    2024-10-21  ...      1.99720000                        2.00960000
+23        SUI    2024-10-22  ...      1.87580000                        1.93930000
+24        SUI    2024-10-23  ...      1.86570000                        1.97750000
+25        SUI    2024-10-24  ...      1.92500000                        1.93690000
+26        SUI    2024-10-25  ...      1.64000000                        1.75200000
+27        SUI    2024-10-26  ...      1.70040000                        1.79500000
+28        SUI    2024-10-27  ...      1.72480000                        1.75590000
+29        SUI    2024-10-28  ...      1.59830000                        1.77480000
+30        TON    2024-10-19  ...      5.22300000                        5.26700000
+31        TON    2024-10-20  ...      5.24400000                        5.35800000
+32        TON    2024-10-21  ...      5.16500000                        5.19400000
+33        TON    2024-10-22  ...      5.14700000                        5.22300000
+34        TON    2024-10-23  ...      5.01500000                        5.14000000
+35        TON    2024-10-24  ...      5.09400000                        5.12800000
+36        TON    2024-10-25  ...      4.56000000                        4.77600000
+37        TON    2024-10-26  ...      4.73800000                        4.92500000
+38        TON    2024-10-27  ...      4.90400000                        4.99700000
+39        TON    2024-10-28  ...      4.92700000                        5.02100000
+40       STRK    2024-10-19  ...      0.39450000                        0.40810000
+41       STRK    2024-10-20  ...      0.39970000                        0.43380000
+42       STRK    2024-10-21  ...      0.41310000                        0.41580000
+43       STRK    2024-10-22  ...      0.40210000                        0.42270000
+44       STRK    2024-10-23  ...      0.38420000                        0.39970000
+45       STRK    2024-10-24  ...      0.39240000                        0.40140000
+46       STRK    2024-10-25  ...      0.34390000                        0.35990000
+47       STRK    2024-10-26  ...      0.35210000                        0.37030000
+48       STRK    2024-10-27  ...      0.36610000                        0.37860000
+49       STRK    2024-10-28  ...      0.36160000                        0.37990000
+
+[50 rows x 6 columns]
+[2024-10-28T21:56:27.010+0000] {python.py:183} INFO - Done. Returned value was: None
+[2024-10-28T21:56:27.030+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=api_binance_dag1, task_id=union_data_to_df, execution_date=20241028T215017, start_date=20241028T215626, end_date=20241028T215627
+[2024-10-28T21:56:27.076+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-10-28T21:56:27.128+0000] {taskinstance.py:2653} INFO - 1 downstream tasks scheduled from follow-on schedule check

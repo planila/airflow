@@ -1,0 +1,23 @@
+[2024-10-28T10:35:23.847+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/sqlalchemy.py:124: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  return not conf.get("database", "sql_alchemy_conn").startswith("mssql")
+
+[2024-10-28T10:35:24.268+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_binance_dag1.SOL scheduled__2024-10-27T09:00:00+00:00 [queued]>
+[2024-10-28T10:35:24.317+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_binance_dag1.SOL scheduled__2024-10-27T09:00:00+00:00 [queued]>
+[2024-10-28T10:35:24.319+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 3
+[2024-10-28T10:35:24.395+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): SOL> on 2024-10-27 09:00:00+00:00
+[2024-10-28T10:35:24.448+0000] {standard_task_runner.py:57} INFO - Started process 116 to run task
+[2024-10-28T10:35:24.491+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'api_binance_dag1', 'SOL', 'scheduled__2024-10-27T09:00:00+00:00', '--job-id', '552', '--raw', '--subdir', 'DAGS_FOLDER/binance.Dag1.py', '--cfg-path', '/tmp/tmp654gh8cs']
+[2024-10-28T10:35:24.518+0000] {standard_task_runner.py:85} INFO - Job 552: Subtask SOL
+[2024-10-28T10:35:24.622+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2024-10-28T10:35:24.894+0000] {task_command.py:410} INFO - Running <TaskInstance: api_binance_dag1.SOL scheduled__2024-10-27T09:00:00+00:00 [running]> on host 3e776c2a96a1
+[2024-10-28T10:35:25.059+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/sqlalchemy.py:124: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  return not conf.get("database", "sql_alchemy_conn").startswith("mssql")
+
+[2024-10-28T10:35:34.004+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Danil' AIRFLOW_CTX_DAG_ID='api_binance_dag1' AIRFLOW_CTX_TASK_ID='SOL' AIRFLOW_CTX_EXECUTION_DATE='2024-10-27T09:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-27T09:00:00+00:00'
+[2024-10-28T10:35:34.856+0000] {logging_mixin.py:149} INFO - Pushed to XCom: Key: SOL, Value: [[1729296000000, '154.93000000', '159.85000000', '153.45000000', '159.79000000', '1724504.16600000', 1729382399999, '269205539.47737000', 678270, '886922.62400000', '138501608.52301000', '0'], [1729382400000, '159.79000000', '167.94000000', '157.58000000', '167.40000000', '3094698.82500000', 1729468799999, '499091756.88122000', 1326223, '1622031.67600000', '261873779.14963000', '0'], [1729468800000, '167.40000000', '171.76000000', '160.99000000', '166.17000000', '4807758.74200000', 1729555199999, '802248688.37832000', 2074468, '2411048.60400000', '402494472.33500000', '0'], [1729555200000, '166.16000000', '170.99000000', '162.99000000', '167.59000000', '4115685.50200000', 1729641599999, '688160680.55922000', 1526765, '2110350.66200000', '352957914.86517000', '0'], [1729641600000, '167.60000000', '174.30000000', '164.13000000', '170.85000000', '4509792.29200000', 1729727999999, '757152123.98221000', 2198916, '2295806.78900000', '385823153.59896000', '0'], [1729728000000, '170.86000000', '179.30000000', '170.50000000', '177.19000000', '3893052.12000000', 1729814399999, '680676981.90358000', 1905295, '2088151.85400000', '365234274.52438000', '0'], [1729814400000, '177.19000000', '177.60000000', '159.12000000', '164.90000000', '5718307.06600000', 1729900799999, '975203392.12616000', 2802265, '2655827.20900000', '453382227.37534000', '0']]
+[2024-10-28T10:35:34.861+0000] {python.py:183} INFO - Done. Returned value was: None
+[2024-10-28T10:35:34.882+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=api_binance_dag1, task_id=SOL, execution_date=20241027T090000, start_date=20241028T103524, end_date=20241028T103534
+[2024-10-28T10:35:34.993+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-10-28T10:35:35.186+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

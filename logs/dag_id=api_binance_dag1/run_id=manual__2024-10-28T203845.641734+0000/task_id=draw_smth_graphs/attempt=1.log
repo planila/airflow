@@ -1,0 +1,69 @@
+[2024-10-28T20:38:55.906+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_binance_dag1.draw_smth_graphs manual__2024-10-28T20:38:45.641734+00:00 [queued]>
+[2024-10-28T20:38:55.920+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_binance_dag1.draw_smth_graphs manual__2024-10-28T20:38:45.641734+00:00 [queued]>
+[2024-10-28T20:38:55.921+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 3
+[2024-10-28T20:38:55.939+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): draw_smth_graphs> on 2024-10-28 20:38:45.641734+00:00
+[2024-10-28T20:38:55.946+0000] {standard_task_runner.py:57} INFO - Started process 105 to run task
+[2024-10-28T20:38:55.950+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'api_binance_dag1', 'draw_smth_graphs', 'manual__2024-10-28T20:38:45.641734+00:00', '--job-id', '684', '--raw', '--subdir', 'DAGS_FOLDER/binance.Dag1.py', '--cfg-path', '/tmp/tmp9enctbep']
+[2024-10-28T20:38:55.952+0000] {standard_task_runner.py:85} INFO - Job 684: Subtask draw_smth_graphs
+[2024-10-28T20:38:55.968+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2024-10-28T20:38:56.011+0000] {task_command.py:410} INFO - Running <TaskInstance: api_binance_dag1.draw_smth_graphs manual__2024-10-28T20:38:45.641734+00:00 [running]> on host 3e776c2a96a1
+[2024-10-28T20:38:56.115+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Danil' AIRFLOW_CTX_DAG_ID='api_binance_dag1' AIRFLOW_CTX_TASK_ID='draw_smth_graphs' AIRFLOW_CTX_EXECUTION_DATE='2024-10-28T20:38:45.641734+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-28T20:38:45.641734+00:00'
+[2024-10-28T20:38:56.164+0000] {logging_mixin.py:149} INFO -    Имя монеты  ...  Цена последней совершенной сделки
+0         SOL  ...                           159.7900
+1         SOL  ...                           167.4000
+2         SOL  ...                           166.1700
+3         SOL  ...                           167.5900
+4         SOL  ...                           170.8500
+5         SOL  ...                           177.1900
+6         SOL  ...                           164.9000
+7         SOL  ...                           170.8800
+8         SOL  ...                           176.6300
+9         SOL  ...                           177.5500
+10      1INCH  ...                             0.2724
+11      1INCH  ...                             0.2912
+12      1INCH  ...                             0.2782
+13      1INCH  ...                             0.2753
+14      1INCH  ...                             0.2646
+15      1INCH  ...                             0.2743
+16      1INCH  ...                             0.2479
+17      1INCH  ...                             0.2510
+18      1INCH  ...                             0.2573
+19      1INCH  ...                             0.2551
+20        SUI  ...                             2.0628
+21        SUI  ...                             2.1282
+22        SUI  ...                             2.0096
+23        SUI  ...                             1.9393
+24        SUI  ...                             1.9775
+25        SUI  ...                             1.9369
+26        SUI  ...                             1.7520
+27        SUI  ...                             1.7950
+28        SUI  ...                             1.7559
+29        SUI  ...                             1.7150
+30        TON  ...                             5.2670
+31        TON  ...                             5.3580
+32        TON  ...                             5.1940
+33        TON  ...                             5.2230
+34        TON  ...                             5.1400
+35        TON  ...                             5.1280
+36        TON  ...                             4.7760
+37        TON  ...                             4.9250
+38        TON  ...                             4.9970
+39        TON  ...                             5.0230
+40       STRK  ...                             0.4081
+41       STRK  ...                             0.4338
+42       STRK  ...                             0.4158
+43       STRK  ...                             0.4227
+44       STRK  ...                             0.3997
+45       STRK  ...                             0.4014
+46       STRK  ...                             0.3599
+47       STRK  ...                             0.3703
+48       STRK  ...                             0.3786
+49       STRK  ...                             0.3758
+
+[50 rows x 6 columns]
+[2024-10-28T20:38:56.165+0000] {python.py:183} INFO - Done. Returned value was: None
+[2024-10-28T20:38:56.177+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=api_binance_dag1, task_id=draw_smth_graphs, execution_date=20241028T203845, start_date=20241028T203855, end_date=20241028T203856
+[2024-10-28T20:38:56.202+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-10-28T20:38:56.228+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check
