@@ -1,0 +1,18 @@
+[2024-11-04T17:49:43.769+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/sqlalchemy.py:124: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  return not conf.get("database", "sql_alchemy_conn").startswith("mssql")
+
+[2024-11-04T17:49:44.387+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_binance_dag1.SUI scheduled__2024-11-03T09:00:00+00:00 [queued]>
+[2024-11-04T17:49:44.445+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_binance_dag1.SUI scheduled__2024-11-03T09:00:00+00:00 [queued]>
+[2024-11-04T17:49:44.447+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 3
+[2024-11-04T17:49:44.591+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): SUI> on 2024-11-03 09:00:00+00:00
+[2024-11-04T17:49:44.617+0000] {standard_task_runner.py:57} INFO - Started process 76 to run task
+[2024-11-04T17:49:44.634+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'api_binance_dag1', 'SUI', 'scheduled__2024-11-03T09:00:00+00:00', '--job-id', '989', '--raw', '--subdir', 'DAGS_FOLDER/binance.Dag1.py', '--cfg-path', '/tmp/tmpxvl0meq8']
+[2024-11-04T17:49:44.639+0000] {standard_task_runner.py:85} INFO - Job 989: Subtask SUI
+[2024-11-04T17:49:45.105+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2024-11-04T17:49:55.172+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 989 for task SUI ((psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8); 76)
+[2024-11-04T17:50:02.715+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2024-11-04T17:50:02.929+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

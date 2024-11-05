@@ -1,0 +1,15 @@
+[2024-11-04T18:42:20.901+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_binance_dag1.1INCH manual__2024-11-04T18:42:02.989757+00:00 [queued]>
+[2024-11-04T18:42:20.938+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_binance_dag1.1INCH manual__2024-11-04T18:42:02.989757+00:00 [queued]>
+[2024-11-04T18:42:20.939+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 3
+[2024-11-04T18:42:21.026+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): 1INCH> on 2024-11-04 18:42:02.989757+00:00
+[2024-11-04T18:42:21.061+0000] {standard_task_runner.py:57} INFO - Started process 296 to run task
+[2024-11-04T18:42:21.096+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'api_binance_dag1', '1INCH', 'manual__2024-11-04T18:42:02.989757+00:00', '--job-id', '1064', '--raw', '--subdir', 'DAGS_FOLDER/binance.Dag1.py', '--cfg-path', '/tmp/tmp7qtel4uw']
+[2024-11-04T18:42:21.110+0000] {standard_task_runner.py:85} INFO - Job 1064: Subtask 1INCH
+[2024-11-04T18:42:21.171+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2024-11-04T18:42:31.359+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 1064 for task 1INCH ((psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8); 296)
+[2024-11-04T18:42:39.076+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2024-11-04T18:42:39.245+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

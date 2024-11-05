@@ -1,0 +1,19 @@
+[2024-11-02T06:32:55.161+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/sqlalchemy.py:124: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  return not conf.get("database", "sql_alchemy_conn").startswith("mssql")
+
+[2024-11-02T06:32:55.354+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_binance_dag1.STRK scheduled__2024-10-26T09:00:00+00:00 [queued]>
+[2024-11-02T06:32:55.385+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_binance_dag1.STRK scheduled__2024-10-26T09:00:00+00:00 [queued]>
+[2024-11-02T06:32:55.386+0000] {taskinstance.py:1308} INFO - Starting attempt 2 of 4
+[2024-11-02T06:32:55.428+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): STRK> on 2024-10-26 09:00:00+00:00
+[2024-11-02T06:32:55.450+0000] {standard_task_runner.py:57} INFO - Started process 81 to run task
+[2024-11-02T06:32:55.475+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'api_binance_dag1', 'STRK', 'scheduled__2024-10-26T09:00:00+00:00', '--job-id', '845', '--raw', '--subdir', 'DAGS_FOLDER/binance.Dag1.py', '--cfg-path', '/tmp/tmpu3oafjjn']
+[2024-11-02T06:32:55.499+0000] {standard_task_runner.py:85} INFO - Job 845: Subtask STRK
+[2024-11-02T06:32:55.633+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2024-11-02T06:32:55.732+0000] {task_command.py:410} INFO - Running <TaskInstance: api_binance_dag1.STRK scheduled__2024-10-26T09:00:00+00:00 [running]> on host 3e776c2a96a1
+[2024-11-02T06:32:55.778+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/sqlalchemy.py:124: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  return not conf.get("database", "sql_alchemy_conn").startswith("mssql")
+
+[2024-11-02T06:33:03.782+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Danil' AIRFLOW_CTX_DAG_ID='api_binance_dag1' AIRFLOW_CTX_TASK_ID='STRK' AIRFLOW_CTX_EXECUTION_DATE='2024-10-26T09:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-26T09:00:00+00:00'
+[2024-11-02T06:33:07.468+0000] {local_task_job_runner.py:225} INFO - Task exited with return code Negsignal.SIGKILL

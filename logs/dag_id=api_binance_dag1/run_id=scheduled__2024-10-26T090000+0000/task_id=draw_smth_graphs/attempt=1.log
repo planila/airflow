@@ -1,0 +1,128 @@
+[2024-11-02T06:45:53.938+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/sqlalchemy.py:124: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  return not conf.get("database", "sql_alchemy_conn").startswith("mssql")
+
+[2024-11-02T06:45:54.026+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: api_binance_dag1.draw_smth_graphs scheduled__2024-10-26T09:00:00+00:00 [queued]>
+[2024-11-02T06:45:54.043+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: api_binance_dag1.draw_smth_graphs scheduled__2024-10-26T09:00:00+00:00 [queued]>
+[2024-11-02T06:45:54.043+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 3
+[2024-11-02T06:45:54.064+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): draw_smth_graphs> on 2024-10-26 09:00:00+00:00
+[2024-11-02T06:45:54.071+0000] {standard_task_runner.py:57} INFO - Started process 134 to run task
+[2024-11-02T06:45:54.075+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'api_binance_dag1', 'draw_smth_graphs', 'scheduled__2024-10-26T09:00:00+00:00', '--job-id', '924', '--raw', '--subdir', 'DAGS_FOLDER/binance.Dag1.py', '--cfg-path', '/tmp/tmpnsxwnm93']
+[2024-11-02T06:45:54.078+0000] {standard_task_runner.py:85} INFO - Job 924: Subtask draw_smth_graphs
+[2024-11-02T06:45:54.101+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2024-11-02T06:45:54.162+0000] {task_command.py:410} INFO - Running <TaskInstance: api_binance_dag1.draw_smth_graphs scheduled__2024-10-26T09:00:00+00:00 [running]> on host 3e776c2a96a1
+[2024-11-02T06:45:54.181+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/sqlalchemy.py:124: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  return not conf.get("database", "sql_alchemy_conn").startswith("mssql")
+
+[2024-11-02T06:45:54.321+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Danil' AIRFLOW_CTX_DAG_ID='api_binance_dag1' AIRFLOW_CTX_TASK_ID='draw_smth_graphs' AIRFLOW_CTX_EXECUTION_DATE='2024-10-26T09:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-26T09:00:00+00:00'
+[2024-11-02T06:45:54.324+0000] {logging_mixin.py:149} INFO - Начинаем строить графики
+[2024-11-02T06:45:54.378+0000] {logging_mixin.py:149} INFO - Данные успешно получены:    Имя монеты  ...  Цена последней совершенной сделки
+0         SOL  ...                           177.1900
+1         SOL  ...                           164.9000
+2         SOL  ...                           170.8800
+3         SOL  ...                           176.6300
+4         SOL  ...                           178.2900
+5         SOL  ...                           179.4200
+6         SOL  ...                           174.8700
+7         SOL  ...                           168.6900
+8         SOL  ...                           166.1000
+9         SOL  ...                           166.8800
+10      1INCH  ...                             0.2743
+11      1INCH  ...                             0.2479
+12      1INCH  ...                             0.2510
+13      1INCH  ...                             0.2573
+14      1INCH  ...                             0.2592
+15      1INCH  ...                             0.2641
+16      1INCH  ...                             0.2598
+17      1INCH  ...                             0.2460
+18      1INCH  ...                             0.2438
+19      1INCH  ...                             0.2438
+20        SUI  ...                             1.9369
+21        SUI  ...                             1.7520
+22        SUI  ...                             1.7950
+23        SUI  ...                             1.7559
+24        SUI  ...                             1.7729
+25        SUI  ...                             2.0731
+26        SUI  ...                             2.0828
+27        SUI  ...                             1.9715
+28        SUI  ...                             1.9900
+29        SUI  ...                             1.9540
+30        TON  ...                             5.1280
+31        TON  ...                             4.7760
+32        TON  ...                             4.9250
+33        TON  ...                             4.9970
+34        TON  ...                             5.0170
+35        TON  ...                             5.0200
+36        TON  ...                             4.9890
+37        TON  ...                             4.8460
+38        TON  ...                             4.8940
+39        TON  ...                             4.9470
+40       STRK  ...                             0.4014
+41       STRK  ...                             0.3599
+42       STRK  ...                             0.3703
+43       STRK  ...                             0.3786
+44       STRK  ...                             0.3767
+45       STRK  ...                             0.3942
+46       STRK  ...                             0.3923
+47       STRK  ...                             0.3710
+48       STRK  ...                             0.3669
+49       STRK  ...                             0.3650
+
+[50 rows x 6 columns]
+[2024-11-02T06:45:54.390+0000] {logging_mixin.py:149} INFO -    Имя монеты Дата открытия  Цена последней совершенной сделки
+0         SOL    2024-10-24                           177.1900
+1         SOL    2024-10-25                           164.9000
+2         SOL    2024-10-26                           170.8800
+3         SOL    2024-10-27                           176.6300
+4         SOL    2024-10-28                           178.2900
+5         SOL    2024-10-29                           179.4200
+6         SOL    2024-10-30                           174.8700
+7         SOL    2024-10-31                           168.6900
+8         SOL    2024-11-01                           166.1000
+9         SOL    2024-11-02                           166.8800
+10      1INCH    2024-10-24                             0.2743
+11      1INCH    2024-10-25                             0.2479
+12      1INCH    2024-10-26                             0.2510
+13      1INCH    2024-10-27                             0.2573
+14      1INCH    2024-10-28                             0.2592
+15      1INCH    2024-10-29                             0.2641
+16      1INCH    2024-10-30                             0.2598
+17      1INCH    2024-10-31                             0.2460
+18      1INCH    2024-11-01                             0.2438
+19      1INCH    2024-11-02                             0.2438
+20        SUI    2024-10-24                             1.9369
+21        SUI    2024-10-25                             1.7520
+22        SUI    2024-10-26                             1.7950
+23        SUI    2024-10-27                             1.7559
+24        SUI    2024-10-28                             1.7729
+25        SUI    2024-10-29                             2.0731
+26        SUI    2024-10-30                             2.0828
+27        SUI    2024-10-31                             1.9715
+28        SUI    2024-11-01                             1.9900
+29        SUI    2024-11-02                             1.9540
+30        TON    2024-10-24                             5.1280
+31        TON    2024-10-25                             4.7760
+32        TON    2024-10-26                             4.9250
+33        TON    2024-10-27                             4.9970
+34        TON    2024-10-28                             5.0170
+35        TON    2024-10-29                             5.0200
+36        TON    2024-10-30                             4.9890
+37        TON    2024-10-31                             4.8460
+38        TON    2024-11-01                             4.8940
+39        TON    2024-11-02                             4.9470
+40       STRK    2024-10-24                             0.4014
+41       STRK    2024-10-25                             0.3599
+42       STRK    2024-10-26                             0.3703
+43       STRK    2024-10-27                             0.3786
+44       STRK    2024-10-28                             0.3767
+45       STRK    2024-10-29                             0.3942
+46       STRK    2024-10-30                             0.3923
+47       STRK    2024-10-31                             0.3710
+48       STRK    2024-11-01                             0.3669
+49       STRK    2024-11-02                             0.3650
+[2024-11-02T06:45:55.699+0000] {logging_mixin.py:149} INFO - Нет данных для построения графиков
+[2024-11-02T06:45:55.700+0000] {python.py:183} INFO - Done. Returned value was: None
+[2024-11-02T06:45:55.716+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=api_binance_dag1, task_id=draw_smth_graphs, execution_date=20241026T090000, start_date=20241102T064554, end_date=20241102T064555
+[2024-11-02T06:45:55.791+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2024-11-02T06:45:55.824+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

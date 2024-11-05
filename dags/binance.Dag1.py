@@ -6,6 +6,7 @@ import pendulum
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 import matplotlib.pyplot as plt
+import os
 
 local_time = pendulum.timezone("Europe/Moscow")
 
@@ -64,32 +65,39 @@ def push_from_xcom_to_df(ti):
         print("Нет данных для построения DataFrame")
 
 def draw_graphs(ti):
+    print("Начинаем строить графики")
+
     json_data = ti.xcom_pull(key='endful_df', task_ids='union_data_to_df')
     if json_data:
         final_df = pd.read_json(json_data)
-        #final_df['Дата открытия'] = final_df['Дата открытия'].dt.strftime('%d.%m.%Y') #не понимаю, почему эта колонка не передалась в датаформате из предыдущего таска
+        print("Данные успешно получены:", final_df.to_string())
         final_df['Дата открытия'] = pd.to_datetime(final_df['Дата открытия'], unit='ms')
         final_df = final_df[['Имя монеты','Дата открытия','Цена последней совершенной сделки']]
-        print(final_df)
-        # Непосредственно построение графиков
-
-
+        print(final_df.to_string())
+        #
         groups = final_df.groupby('Имя монеты')
 
-        for name, group in groups:
-            plt.figure()  # Создаем новую фигуру для каждого графика
-            plt.plot(group['Дата открытия'], group['Цена последней совершенной сделки'], marker='o', label=name)
-            plt.title(f'График для {name}')
-            plt.xlabel('Дата')
-            plt.ylabel('Значение')
-            plt.legend()
-            plt.grid()
-            plt.show()
+        #
+        # save_directory = 'C:/Airflow/imagines/'
+        # os.makedirs(save_directory, exist_ok=True)
+        #
+        # for name, rows in groups:
+        #     plt.figure()
+        #     plt.plot(rows['Дата открытия'], rows['Цена последней совершенной сделки'], marker='o')
+        #     plt.title(f'График цен для {name}')
+        #     plt.xlabel('Дата')
+        #     plt.ylabel('Цена')
+        #     plt.xticks(rotation=45)
+        #     plt.grid()
+        #     plt.tight_layout()
+        #     plt.savefig(os.path.join(save_directory, f'grafik_{name}.png'))
 
-        # print(final_df[['Имя монеты','Дата открытия','Цена последней совершенной сделки']])
     else:
         print("Нет данных для построения графиков")
 
+
+
+    
 
 
 default_args = {
@@ -129,8 +137,10 @@ with DAG(
         provide_context=True
     )
 
+
     # Связываем каждую задачу с union_data
     for task in tasks:
         task >> union_data  # Каждую задачу связываем с union_data
 
     union_data >> power_bi
+
